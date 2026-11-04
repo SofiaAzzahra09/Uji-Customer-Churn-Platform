@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}Upload & Retrain Model{% endblock %}
+
+{% block content %}
+<div class="mb-4">
+    <h2 class="fw-bold mb-1"><i class="fa-solid fa-upload text-primary me-2"></i>Upload Dataset & Retrain Model</h2>
+    <p class="text-muted mb-0">Upload file dataset baru (.csv, .xlsx, .xls) untuk melatih ulang model Random Forest Classifier.</p>
+</div>
+
+<div class="row g-4">
+    <!-- Upload Form -->
+    <div class="col-lg-7">
+        <div class="card card-custom p-4">
+            <h5 class="fw-bold mb-3 border-bottom pb-2"><i class="fa-solid fa-file-arrow-up text-secondary me-2"></i>Form Upload & Training</h5>
+
+            <form method="POST" action="/retrain" enctype="multipart/form-data" id="retrainForm">
+                <!-- Drag & Drop Area -->
+                <div class="mb-3">
+                    <label class="form-label fw-semibold small">File Dataset</label>
+                    <div class="border border-2 border-dashed rounded-3 p-4 text-center bg-light" id="dropZone"
+                         ondragover="event.preventDefault(); this.classList.add('border-primary', 'bg-primary-subtle');"
+                         ondragleave="this.classList.remove('border-primary', 'bg-primary-subtle');"
+                         ondrop="event.preventDefault(); this.classList.remove('border-primary', 'bg-primary-subtle'); document.getElementById('fileInput').files = event.dataTransfer.files; updateFileName();">
+                        <i class="fa-solid fa-cloud-arrow-up fa-2x text-muted mb-2 d-block"></i>
+                        <p class="mb-1 fw-semibold">Drag & drop file di sini</p>
+                        <p class="small text-muted mb-2">atau klik tombol di bawah untuk memilih file</p>
+                        <input type="file" name="dataset" id="fileInput" accept=".csv,.xlsx,.xls" class="d-none" required onchange="updateFileName()">
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="document.getElementById('fileInput').click()">
+                            <i class="fa-solid fa-folder-open me-1"></i>Pilih File
+                        </button>
+                        <p class="small text-muted mt-2 mb-0" id="fileNameDisplay">Format: .csv, .xlsx, .xls</p>
+                    </div>
+                </div>
+
+                <!-- Catatan -->
+                <div class="mb-3">
+                    <label class="form-label fw-semibold small">Catatan Training</label>
+                    <input type="text" name="catatan" class="form-control" placeholder="Misal: Data pelanggan Q3 2026, penambahan 500 record baru" value="">
+                </div>
+
+                <!-- Required Columns Info -->
+                <div class="alert alert-warning py-2 px-3 small mb-3">
+                    <i class="fa-solid fa-triangle-exclamation me-1"></i>
+                    <strong>Kolom Wajib:</strong> <code>customer_id</code>, <code>age</code>, <code>income_million_idr</code>, <code>tenure_months</code>, <code>monthly_spend_idr</code>, <code>support_tickets</code>, <code>login_frequency_monthly</code>, <code>contract_type</code>, <code>payment_method</code>, <code>discount_used</code>, <code>satisfaction_score</code>, <code>churn</code>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold shadow-sm" id="trainBtn">
+                    <i class="fa-solid fa-play me-2"></i>Mulai Training Model Baru
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Info Panel -->
+    <div class="col-lg-5">
+        <div class="card card-custom p-4 h-100">
+            <h5 class="fw-bold mb-3 border-bottom pb-2"><i class="fa-solid fa-circle-info text-info me-2"></i>Informasi Training</h5>
+
+            <div class="mb-3">
+                <h6 class="fw-bold small text-muted text-uppercase">Pipeline CRISP-DM Otomatis:</h6>
+                <ol class="small text-secondary ps-3">
+                    <li class="mb-1"><strong>Data Cleaning:</strong> Duplikasi, inkonsistensi data, missing value (median imputation), outlier capping (IQR)</li>
+                    <li class="mb-1"><strong>Feature Engineering:</strong> Fitur turunan + ordinal & one-hot encoding</li>
+                    <li class="mb-1"><strong>Class Weight Balanced:</strong> Pembobotan otomatis kelas minoritas (churn)</li>
+                    <li class="mb-1"><strong>GridSearchCV:</strong> 5-Fold Stratified CV untuk optimasi hyperparameter Logistic Regression</li>
+                    <li class="mb-1"><strong>Threshold Optimization:</strong> Memaksimalkan F1-Score (bukan default 0.50)</li>
+                    <li class="mb-1"><strong>Overfitting Detection:</strong> Bandingkan Train vs Test ROC-AUC</li>
+                </ol>
+            </div>
+
+            <div class="alert alert-light border py-2 px-3 small mb-0">
+                <i class="fa-solid fa-clock me-1"></i>
+                <strong>Estimasi Waktu:</strong> Training memerlukan sekitar 1-5 menit tergantung ukuran dataset. Jangan tutup browser selama proses berlangsung.
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function updateFileName() {
+    const input = document.getElementById('fileInput');
+    const display = document.getElementById('fileNameDisplay');
+    if (input.files.length > 0) {
+        const file = input.files[0];
+        const sizeMB = (file.size / 1024 / 1024).toFixed(2);
+        display.innerHTML = '<i class="fa-solid fa-file-circle-check text-success me-1"></i><strong>' + file.name + '</strong> (' + sizeMB + ' MB)';
+        display.classList.remove('text-muted');
+        display.classList.add('text-success');
+    }
+}
+
+document.getElementById('retrainForm').addEventListener('submit', function() {
+    const btn = document.getElementById('trainBtn');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Sedang Melatih Model... Mohon Tunggu';
+});
+</script>
+{% endblock %}

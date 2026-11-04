@@ -1,0 +1,301 @@
+{% extends "base.html" %}
+
+{% block title %}Evaluasi Model Machine Learning{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="fw-bold mb-1"><i class="fa-solid fa-chart-column text-primary me-2"></i>Evaluasi Model Machine Learning</h2>
+        {% if active_info %}
+        <p class="text-muted mb-0">Model Aktif: <strong class="text-primary">{{ active_info.versi }}</strong> | Training: {{ active_info.tanggal_training[:19] if active_info.tanggal_training else '-' }} | Data Uji: {{ meta.test_metrics.total_test_samples }} Pelanggan</p>
+        {% else %}
+        <p class="text-muted mb-0">Belum ada model aktif.</p>
+        {% endif %}
+    </div>
+    <div class="d-flex gap-2">
+        {% if meta and meta.model_status %}
+        {% if meta.model_status == 'Good Fit' %}
+            <span class="badge bg-success px-3 py-2 fs-6"><i class="fa-solid fa-check me-1"></i>{{ meta.model_status }}</span>
+        {% elif meta.model_status == 'Overfitting' %}
+            <span class="badge bg-danger px-3 py-2 fs-6"><i class="fa-solid fa-triangle-exclamation me-1"></i>{{ meta.model_status }}</span>
+        {% elif meta.model_status == 'Underfitting' %}
+            <span class="badge bg-warning text-dark px-3 py-2 fs-6"><i class="fa-solid fa-arrow-down me-1"></i>{{ meta.model_status }}</span>
+        {% else %}
+            <span class="badge bg-secondary px-3 py-2 fs-6"><i class="fa-solid fa-circle-info me-1"></i>{{ meta.model_status }}</span>
+        {% endif %}
+        {% endif %}
+        <span class="badge bg-primary px-3 py-2 fs-6"><i class="fa-solid fa-chart-line me-1"></i> Logistic Regression</span>
+    </div>
+</div>
+
+{% if not meta or not meta.test_metrics %}
+<div class="card card-custom p-5 text-center">
+    <div class="p-4">
+        <div class="bg-warning-subtle text-warning p-4 rounded-circle d-inline-block mb-3">
+            <i class="fa-solid fa-triangle-exclamation fa-2xl"></i>
+        </div>
+        <h5 class="fw-bold">Belum Ada Model Aktif</h5>
+        <p class="text-muted">Silakan training model terlebih dahulu melalui halaman <a href="/retrain">Retrain</a> atau jalankan <code>python customer_churn_crisp_dm.py</code>.</p>
+    </div>
+</div>
+{% else %}
+<!-- Dynamic KPI Metric Cards -->
+<div class="row g-3 mb-4">
+    <div class="col-lg-2 col-md-4">
+        <div class="card card-custom p-3 h-100 border-start border-4 border-primary">
+            <span class="text-muted small fw-semibold text-uppercase">ROC-AUC</span>
+            <h3 class="fw-bold text-primary my-1">{{ meta.test_metrics.roc_auc }}</h3>
+            <small class="text-muted d-block">Daya Pembeda Model</small>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4">
+        <div class="card card-custom p-3 h-100 border-start border-4 border-success">
+            <span class="text-muted small fw-semibold text-uppercase">Akurasi</span>
+            <h3 class="fw-bold text-success my-1">{{ (meta.test_metrics.accuracy * 100)|round(1) }}%</h3>
+            <small class="text-muted d-block">Ketepatan Global</small>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4">
+        <div class="card card-custom p-3 h-100 border-start border-4 border-info">
+            <span class="text-muted small fw-semibold text-uppercase">Precision</span>
+            <h3 class="fw-bold text-info my-1">{{ (meta.test_metrics.precision * 100)|round(1) }}%</h3>
+            <small class="text-muted d-block">Akurasi Deteksi Churn</small>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4">
+        <div class="card card-custom p-3 h-100 border-start border-4 border-warning">
+            <span class="text-muted small fw-semibold text-uppercase">Recall</span>
+            <h3 class="fw-bold text-warning my-1">{{ (meta.test_metrics.recall * 100)|round(1) }}%</h3>
+            <small class="text-muted d-block">Cakupan Churn Aktual</small>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4">
+        <div class="card card-custom p-3 h-100 border-start border-4" style="border-left-color: #8b5cf6 !important;">
+            <span class="text-muted small fw-semibold text-uppercase">F1-Score</span>
+            <h3 class="fw-bold my-1" style="color: #8b5cf6;">{{ meta.test_metrics.f1_score }}</h3>
+            <small class="text-muted d-block">Harmonis Prec-Recall</small>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4">
+        <div class="card card-custom p-3 h-100 border-start border-4 border-danger">
+            <span class="text-muted small fw-semibold text-uppercase">Threshold</span>
+            <h3 class="fw-bold text-danger my-1">{{ meta.test_metrics.optimal_threshold|default(meta.optimal_threshold, true)|round(4) }}</h3>
+            <small class="text-muted d-block">Optimal (F1-based)</small>
+        </div>
+    </div>
+</div>
+
+<!-- Charts -->
+<div class="row g-4 mb-4">
+    <div class="col-lg-6">
+        <div class="card card-custom p-4 h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="fw-bold mb-0"><i class="fa-solid fa-bezier-curve text-primary me-2"></i>Kurva ROC</h5>
+                <span class="badge bg-light text-dark border">AUC = {{ meta.test_metrics.roc_auc }}</span>
+            </div>
+            <div class="chart-container" style="position: relative; height:280px;">
+                <canvas id="dynamicRocChart"></canvas>
+            </div>
+            <p class="text-muted small text-center mt-3 mb-0">False Positive Rate vs True Positive Rate dari test set.</p>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="card card-custom p-4 h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="fw-bold mb-0"><i class="fa-solid fa-ranking-star text-primary me-2"></i>Top Fitur Berpengaruh</h5>
+                <span class="badge bg-light text-dark border">Feature Importance</span>
+            </div>
+            <div class="chart-container" style="position: relative; height:280px;">
+                <canvas id="dynamicFeatureChart"></canvas>
+            </div>
+            <p class="text-muted small text-center mt-3 mb-0">Fitur paling berpengaruh (|koefisien|) pada model Logistic Regression.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Confusion Matrix & Hyperparameters -->
+<div class="row g-4 mb-4">
+    <div class="col-lg-6">
+        <div class="card card-custom p-4 h-100">
+            <h5 class="fw-bold mb-3"><i class="fa-solid fa-table-cells-large text-primary me-2"></i>Confusion Matrix ({{ meta.test_metrics.total_test_samples }} Data)</h5>
+            <div class="row g-2 text-center my-2">
+                <div class="col-6">
+                    <div class="p-3 bg-success-subtle border border-success rounded">
+                        <span class="badge bg-success mb-1">True Negative (TN)</span>
+                        <h2 class="fw-bold text-success my-1">{{ meta.confusion_matrix.tn }}</h2>
+                        <small class="text-muted">Aktif diprediksi benar Aktif</small>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 bg-warning-subtle border border-warning rounded">
+                        <span class="badge bg-warning text-dark mb-1">False Positive (FP)</span>
+                        <h2 class="fw-bold text-warning my-1">{{ meta.confusion_matrix.fp }}</h2>
+                        <small class="text-muted">False Alarm (aktif dikira churn)</small>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 bg-danger-subtle border border-danger rounded">
+                        <span class="badge bg-danger mb-1">False Negative (FN)</span>
+                        <h2 class="fw-bold text-danger my-1">{{ meta.confusion_matrix.fn }}</h2>
+                        <small class="text-muted">Missed Churn (tidak terdeteksi)</small>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 bg-primary-subtle border border-primary rounded">
+                        <span class="badge bg-primary mb-1">True Positive (TP)</span>
+                        <h2 class="fw-bold text-primary my-1">{{ meta.confusion_matrix.tp }}</h2>
+                        <small class="text-muted">Churn berhasil terdeteksi</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="card card-custom p-4 h-100">
+            <h5 class="fw-bold mb-3"><i class="fa-solid fa-sliders text-primary me-2"></i>Hyperparameter & Status</h5>
+            <div class="bg-light p-3 rounded-3 mb-3 border">
+                <div class="row g-2 small">
+                    <div class="col-6">
+                        <span class="text-muted d-block">Algoritma:</span>
+                        <strong>Logistic Regression</strong>
+                    </div>
+                    <div class="col-6">
+                        <span class="text-muted d-block">CV ROC-AUC:</span>
+                        <strong class="text-primary">{{ meta.cv_roc_auc }}</strong>
+                    </div>
+                    {% if meta.best_hyperparameters %}
+                    {% for key, val in meta.best_hyperparameters.items() %}
+                    <div class="col-6">
+                        <span class="text-muted d-block">{{ key.split('__')[-1] }}:</span>
+                        <strong>{{ val }}</strong>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+
+            {% if meta.train_roc_auc and meta.test_roc_auc %}
+            <div class="alert alert-{{ 'success' if meta.model_status == 'Good Fit' else ('danger' if meta.model_status == 'Overfitting' else 'warning') }} py-2 px-3 small mb-2">
+                <i class="fa-solid fa-stethoscope me-1"></i>
+                <strong>Deteksi Overfitting:</strong> Train ROC-AUC = {{ meta.train_roc_auc }} vs Test ROC-AUC = {{ meta.test_roc_auc }} → <strong>{{ meta.model_status }}</strong>
+            </div>
+            {% endif %}
+
+            <div class="alert alert-info py-2 px-3 small mb-0">
+                <i class="fa-solid fa-lightbulb me-1"></i> <strong>Class Weight Balanced:</strong> Pembobotan kelas terbalik secara otomatis untuk mengatasi <em>imbalanced class</em>. Kelas minoritas (churn) diberi bobot lebih tinggi.
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Classification Report Table -->
+<div class="card card-custom p-4 mb-4">
+    <h5 class="fw-bold mb-3"><i class="fa-solid fa-table text-primary me-2"></i>Classification Report</h5>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th>Kelas Target</th>
+                    <th class="text-center">Precision</th>
+                    <th class="text-center">Recall</th>
+                    <th class="text-center">F1-Score</th>
+                    <th class="text-center">Support</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if meta.classification_report %}
+                <tr>
+                    <td><strong>Kelas 0 (Stayed)</strong></td>
+                    <td class="text-center">{{ (meta.classification_report['0']['precision'] * 100)|round(1) }}%</td>
+                    <td class="text-center">{{ (meta.classification_report['0']['recall'] * 100)|round(1) }}%</td>
+                    <td class="text-center">{{ meta.classification_report['0']['f1-score']|round(4) }}</td>
+                    <td class="text-center">{{ meta.classification_report['0']['support']|int }}</td>
+                </tr>
+                <tr class="table-warning">
+                    <td><strong>Kelas 1 (Churn)</strong> <span class="badge bg-danger ms-1">Target</span></td>
+                    <td class="text-center fw-bold">{{ (meta.classification_report['1']['precision'] * 100)|round(1) }}%</td>
+                    <td class="text-center fw-bold">{{ (meta.classification_report['1']['recall'] * 100)|round(1) }}%</td>
+                    <td class="text-center fw-bold">{{ meta.classification_report['1']['f1-score']|round(4) }}</td>
+                    <td class="text-center">{{ meta.classification_report['1']['support']|int }}</td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="alert alert-light border mt-3 mb-0 small">
+        <h6 class="fw-bold mb-1 text-primary"><i class="fa-solid fa-circle-question me-1"></i>Penjelasan Metrik:</h6>
+        <ul class="mb-0 ps-3 text-secondary">
+            <li><strong>ROC-AUC:</strong> Mengukur kemampuan model membedakan churn vs aktif di berbagai threshold.</li>
+            <li><strong>Recall:</strong> Sangat krusial — kehilangan pelanggan churn (False Negative) lebih mahal daripada false alarm.</li>
+            <li><strong>Optimal Threshold:</strong> Threshold yang memaksimalkan F1-Score, bukan default 0.50.</li>
+            <li><strong>Class Weight Balanced:</strong> Mengatasi ketidakseimbangan kelas dengan pembobotan otomatis pada kelas minoritas.</li>
+        </ul>
+    </div>
+</div>
+
+{% if meta.cleaning_log %}
+<div class="card card-custom p-4 mb-4">
+    <h5 class="fw-bold mb-3"><i class="fa-solid fa-broom text-primary me-2"></i>Data Cleaning Log</h5>
+    <ul class="list-group list-group-flush small">
+        {% for entry in meta.cleaning_log %}
+        <li class="list-group-item px-0 py-1"><i class="fa-solid fa-circle-check text-success me-1"></i> {{ entry }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{% if meta and meta.test_metrics %}
+<script>
+    const rawRocData = {{ roc_data | tojson }};
+    const ctxRoc = document.getElementById('dynamicRocChart').getContext('2d');
+    new Chart(ctxRoc, {
+        type: 'line',
+        data: {
+            datasets: [
+                {
+                    label: 'Logistic Regression (AUC = {{ meta.test_metrics.roc_auc }})',
+                    data: rawRocData.map(p => ({ x: p.fpr, y: p.tpr })),
+                    borderColor: '#4361ee', backgroundColor: 'rgba(67, 97, 238, 0.1)',
+                    fill: true, tension: 0.2, borderWidth: 2.5, pointRadius: 1
+                },
+                {
+                    label: 'Random Guess (AUC = 0.500)',
+                    data: [{ x: 0, y: 0 }, { x: 1, y: 1 }],
+                    borderColor: '#94a3b8', borderDash: [5, 5], borderWidth: 1.5, pointRadius: 0
+                }
+            ]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            scales: {
+                x: { type: 'linear', min: 0, max: 1, title: { display: true, text: 'False Positive Rate' } },
+                y: { min: 0, max: 1, title: { display: true, text: 'True Positive Rate' } }
+            },
+            plugins: { legend: { position: 'bottom' } }
+        }
+    });
+
+    const featLabels = {{ feat_labels | tojson }};
+    const featValues = {{ feat_values | tojson }};
+    const ctxFeat = document.getElementById('dynamicFeatureChart').getContext('2d');
+    new Chart(ctxFeat, {
+        type: 'bar', indexAxis: 'y',
+        data: {
+            labels: featLabels,
+            datasets: [{ label: 'Importance (%)', data: featValues, backgroundColor: '#3b82f6', borderRadius: 5 }]
+        },
+        options: {
+            responsive: true, maintainAspectRatio: false,
+            scales: { x: { beginAtZero: true, title: { display: true, text: 'Relatif (%)' } } },
+            plugins: { legend: { display: false } }
+        }
+    });
+</script>
+{% endif %}
+{% endblock %}

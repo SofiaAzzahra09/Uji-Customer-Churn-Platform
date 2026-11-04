@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Customer Churn Prediction System{% endblock %}</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="alternate icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%234361ee'/><path d='M32 10 L48 18 V32 C48 42 41 50 32 54 C23 50 16 42 16 32 V18 Z' fill='none' stroke='%23ffffff' stroke-width='3'/><path d='M24 35 L29 28 L35 34 L40 24' fill='none' stroke='%2338bdf8' stroke-width='3.5'/></svg>">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --accent-color: #4cc9f0;
+            --dark-bg: #0f172a;
+            --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        body {
+            background-color: #f8fafc;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: #334155;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar-custom {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+        .navbar-brand {
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: #f8fafc !important;
+            transition: transform 0.2s ease;
+        }
+        .navbar-brand:hover {
+            transform: scale(1.02);
+        }
+        
+        /* Navlink Hover & Active Styles */
+        .nav-link {
+            font-weight: 500;
+            color: #94a3b8 !important;
+            padding: 8px 14px !important;
+            border-radius: 8px;
+            margin: 0 2px;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+        .nav-link:hover {
+            color: #38bdf8 !important;
+            background-color: rgba(255, 255, 255, 0.08);
+            transform: translateY(-2px);
+        }
+        .nav-link.active {
+            color: #ffffff !important;
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+            font-weight: 600;
+            transform: translateY(-1px);
+        }
+        .nav-link:active {
+            transform: translateY(1px);
+        }
+
+        /* Button Hover & Active States */
+        .btn {
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        }
+        .btn:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            border: none;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+        }
+        .btn-warning {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            border: none;
+            color: #ffffff;
+        }
+        .btn-warning:hover {
+            background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+            color: #ffffff;
+        }
+        .btn-outline-danger:hover {
+            background-color: #ef4444;
+            color: #ffffff;
+        }
+
+        /* Cards */
+        .card-custom {
+            border: none;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            background: #ffffff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-custom:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+        .kpi-card {
+            border-left: 4px solid var(--primary-color);
+        }
+        footer {
+            margin-top: auto;
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="{{ url_for('dashboard') if session.get('user') else url_for('login') }}">
+                <img src="{{ url_for('static', filename='favicon.svg') }}" width="28" height="28" alt="Logo" class="d-inline-block align-text-top">
+                <span>ChurnGuard AI <span class="badge bg-primary text-white ms-1" style="font-size: 0.65rem;">Prediksi Churn</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Navigation Menu (Only shown after Login) -->
+                {% if session.get('user') %}
+                <ul class="navbar-nav me-auto gap-1">
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="/">
+                            <i class="fa-solid fa-gauge-high me-1"></i> Dashboard & EDA
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path.startswith('/predict') %}active{% endif %}" href="/predict">
+                            <i class="fa-solid fa-user-check me-1"></i> Prediksi Churn
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path.startswith('/batch') %}active{% endif %}" href="/batch">
+                            <i class="fa-solid fa-table-list me-1"></i> Data Pelanggan
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path.startswith('/evaluation') %}active{% endif %}" href="/evaluation">
+                            <i class="fa-solid fa-chart-column me-1"></i> Evaluasi
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path.startswith('/models') %}active{% endif %}" href="/models">
+                            <i class="fa-solid fa-robot me-1"></i> Kelola Model
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path.startswith('/retrain') %}active{% endif %}" href="/retrain">
+                            <i class="fa-solid fa-upload me-1"></i> Retrain
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- User Profile & Logout -->
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li class="nav-item d-flex align-items-center gap-2 text-light me-2">
+                        <div class="d-flex align-items-center gap-2 bg-slate-800 py-1 px-3 rounded-pill border border-secondary-subtle" style="background-color: rgba(255, 255, 255, 0.1);">
+                            <i class="fa-solid fa-circle-user text-info"></i>
+                            <div class="lh-1 small">
+                                <span class="d-block fw-bold text-white">{{ session.user.name }}</span>
+                                <span class="badge bg-info-subtle text-info border border-info-subtle py-0" style="font-size: 0.65rem;">{{ session.user.role }}</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-sm btn-outline-danger d-flex align-items-center gap-1 shadow-sm px-3" href="/logout">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+                {% else %}
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-sm btn-primary d-flex align-items-center gap-1 px-3 shadow-sm" href="/login">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            <span>Login Admin</span>
+                        </a>
+                    </li>
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container py-4">
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                <div class="alert alert-{{ category if category != 'error' else 'danger' }} alert-dismissible fade show shadow-sm small py-2 mb-4" role="alert">
+                    <i class="fa-solid fa-circle-info me-2"></i> {{ message }}
+                    <button type="button" class="btn-close py-2" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-1 fw-semibold text-light">Customer Churn Prediction & Analytics Portfolio</p>
+            <p class="small mb-0">Dikembangkan oleh <strong>Sofia Azzahra Alamsyah</strong> | Implementasi Metodologi CRISP-DM & Machine Learning</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block title %}Kelola Model ML{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="fw-bold mb-1"><i class="fa-solid fa-robot text-primary me-2"></i>Kelola Model Machine Learning</h2>
+        <p class="text-muted mb-0">Kelola versi model prediksi churn. Aktifkan, bandingkan, atau hapus model.</p>
+    </div>
+    <a href="/retrain" class="btn btn-primary shadow-sm">
+        <i class="fa-solid fa-upload me-1"></i> Upload & Retrain
+    </a>
+</div>
+
+{% if models|length == 0 %}
+<div class="card card-custom p-5 text-center">
+    <div class="p-4">
+        <div class="bg-warning-subtle text-warning p-4 rounded-circle d-inline-block mb-3">
+            <i class="fa-solid fa-triangle-exclamation fa-2xl"></i>
+        </div>
+        <h5 class="fw-bold">Belum Ada Model Tersimpan</h5>
+        <p class="text-muted">Silakan jalankan training pertama dengan mengupload dataset di halaman <strong>Retrain</strong>, atau jalankan <code>python customer_churn_crisp_dm.py</code> dari terminal.</p>
+        <a href="/retrain" class="btn btn-primary mt-2"><i class="fa-solid fa-plus me-1"></i>Buat Model Pertama</a>
+    </div>
+</div>
+{% else %}
+<div class="card card-custom p-4">
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th>Versi</th>
+                    <th>Tanggal Training</th>
+                    <th class="text-center">Data</th>
+                    <th class="text-center">ROC-AUC</th>
+                    <th class="text-center">F1-Score</th>
+                    <th class="text-center">Recall</th>
+                    <th class="text-center">Threshold</th>
+                    <th class="text-center">Status Model</th>
+                    <th class="text-center">Status</th>
+                    <th class="text-center">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for m in models %}
+                <tr class="{% if m.status == 'aktif' %}table-success{% endif %}">
+                    <td><strong class="text-primary">{{ m.versi }}</strong></td>
+                    <td class="small">{{ m.tanggal_training[:19] if m.tanggal_training else '-' }}</td>
+                    <td class="text-center">{{ m.jumlah_data }}</td>
+                    <td class="text-center fw-bold">{{ '%.4f'|format(m.roc_auc) }}</td>
+                    <td class="text-center">{{ '%.4f'|format(m.f1_score) if m.f1_score else '-' }}</td>
+                    <td class="text-center">{{ '%.1f'|format(m.recall_score * 100) if m.recall_score else '-' }}%</td>
+                    <td class="text-center">{{ '%.2f'|format(m.optimal_threshold) if m.optimal_threshold else '0.50' }}</td>
+                    <td class="text-center">
+                        {% if m.model_status == 'Good Fit' %}
+                            <span class="badge bg-success">{{ m.model_status }}</span>
+                        {% elif m.model_status == 'Overfitting' %}
+                            <span class="badge bg-danger">{{ m.model_status }}</span>
+                        {% elif m.model_status == 'Underfitting' %}
+                            <span class="badge bg-warning text-dark">{{ m.model_status }}</span>
+                        {% else %}
+                            <span class="badge bg-secondary">{{ m.model_status or 'Unknown' }}</span>
+                        {% endif %}
+                    </td>
+                    <td class="text-center">
+                        {% if m.status == 'aktif' %}
+                            <span class="badge bg-success px-3 py-1"><i class="fa-solid fa-check me-1"></i>Aktif</span>
+                        {% else %}
+                            <span class="badge bg-secondary px-3 py-1">Nonaktif</span>
+                        {% endif %}
+                    </td>
+                    <td class="text-center">
+                        <div class="d-flex gap-1 justify-content-center">
+                            {% if m.status != 'aktif' %}
+                            <form method="POST" action="/models/activate/{{ m.versi }}" class="d-inline">
+                                <button type="submit" class="btn btn-sm btn-primary" title="Aktifkan model ini">
+                                    <i class="fa-solid fa-bolt"></i>
+                                </button>
+                            </form>
+                            <form method="POST" action="/models/delete/{{ m.versi }}" class="d-inline" onsubmit="return confirm('Yakin hapus model {{ m.versi }}?')">
+                                <button type="submit" class="btn btn-sm btn-outline-danger" title="Hapus model">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </form>
+                            {% else %}
+                            <button class="btn btn-sm btn-success" disabled title="Model sedang aktif">
+                                <i class="fa-solid fa-check"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary" disabled title="Tidak bisa hapus model aktif">
+                                <i class="fa-solid fa-lock"></i>
+                            </button>
+                            {% endif %}
+                        </div>
+                    </td>
+                </tr>
+                {% if m.catatan %}
+                <tr class="{% if m.status == 'aktif' %}table-success{% endif %}">
+                    <td colspan="10" class="small text-muted py-1 ps-4 border-0"><i class="fa-solid fa-comment me-1"></i>{{ m.catatan }}</td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="alert alert-info mt-3 small">
+    <i class="fa-solid fa-circle-info me-1"></i>
+    <strong>Tips:</strong> Hanya satu model yang bisa aktif pada satu waktu. Model aktif digunakan untuk semua prediksi dan evaluasi di dashboard. Model aktif tidak dapat dihapus.
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,13 @@
+column,description,type,role
+customer_id,ID pelanggan,string,Identifier
+age,Usia pelanggan,integer,Feature
+income_million_idr,Pendapatan bulanan dalam juta rupiah,float,Feature
+tenure_months,Lama menjadi pelanggan dalam bulan,integer,Feature
+monthly_spend_idr,Rata-rata pengeluaran bulanan,integer,Feature
+support_tickets,Jumlah tiket bantuan/customer support,integer,Feature
+login_frequency_monthly,Frekuensi login rata-rata per bulan,float,Feature
+contract_type,Jenis kontrak,categorical,Feature
+payment_method,Metode pembayaran,categorical,Feature
+discount_used,"Apakah menggunakan diskon (1=ya, 0=tidak)",binary,Feature
+satisfaction_score,Skor kepuasan 1–5,float,Feature
+churn,"Apakah pelanggan berhenti berlangganan (1=ya, 0=tidak)",binary,Target

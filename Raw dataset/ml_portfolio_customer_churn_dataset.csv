@@ -1,0 +1,1201 @@
+customer_id,age,income_million_idr,tenure_months,monthly_spend_idr,support_tickets,login_frequency_monthly,contract_type,payment_method,discount_used,satisfaction_score,churn
+CUST00001,49,9.41,90,485.0,3,11.9,Quarterly,E-Wallet,0,4.6,0
+CUST00002,35,9.57,29,342.0,0,10.0,Annual,Bank Transfer,1,4.0,0
+CUST00003,28,10.61,33,609.0,0,3.9,Annual,Credit Card,0,4.9,0
+CUST00004,41,14.93,60,661.0,1,12.4,Monthly,Bank Transfer,0,3.4,0
+CUST00005,39,7.93,91,492.0,1,13.1,Quarterly,E-Wallet,0,3.6,0
+CUST00006,43,5.95,89,257.0,6,7.0,Monthly,Credit Card,0,2.1,0
+CUST00007,31,4.09,55,640.0,2,15.7,Monthly,E-Wallet,1,3.0,0
+CUST00008,31,6.16,10,486.0,1,15.3,Annual,Bank Transfer,0,3.8,1
+CUST00009,44,8.39,47,182.0,0,12.2,Quarterly,Bank Transfer,0,3.9,0
+CUST00010,44,14.24,23,198.0,3,12.1,Quarterly,E-Wallet,0,5.0,0
+CUST00011,23,6.84,85,723.0,2,16.7,Annual,Credit Card,0,1.9,0
+CUST00012,42,9.22,21,693.0,1,13.8,Annual,Bank Transfer,1,,0
+CUST00013,22,8.45,13,50.0,2,8.5,Annual,Credit Card,0,3.3,0
+CUST00014,44,12.3,33,206.0,3,11.0,Monthly,Credit Card,0,3.7,1
+CUST00015,50,16.59,24,655.0,0,14.8,Monthly,Credit Card,1,3.7,0
+CUST00016,22,6.8,11,447.0,1,1.8,Monthly,Credit Card,0,3.4,1
+CUST00017,41,6.93,17,576.0,5,7.3,Monthly,Credit Card,1,2.6,1
+CUST00018,53,11.84,68,439.0,2,15.4,Monthly,Credit Card,0,2.4,0
+CUST00019,32,10.68,47,568.0,0,18.0,Quarterly,Credit Card,0,3.4,0
+CUST00020,42,14.41,25,451.0,2,17.1,Quarterly,Bank Transfer,0,2.3,0
+CUST00021,45,10.37,94,371.0,3,16.5,Annual,Credit Card,1,3.5,0
+CUST00022,47,7.35,73,641.0,1,12.6,Quarterly,Bank Transfer,0,3.4,1
+CUST00023,48,10.39,21,486.0,3,6.9,Quarterly,Credit Card,0,1.4,1
+CUST00024,36,12.05,84,567.0,0,11.0,Monthly,Credit Card,0,,0
+CUST00025,35,11.13,83,478.0,1,2.0,Monthly,Credit Card,1,3.7,1
+CUST00026,23,10.12,83,362.0,1,18.5,Monthly,Credit Card,0,1.4,0
+CUST00027,27,11.91,12,740.0,0,7.9,Annual,Bank Transfer,0,3.8,0
+CUST00028,41,12.24,37,,1,9.3,Monthly,Credit Card,0,3.4,0
+CUST00029,29,12.92,42,386.0,1,17.3,Quarterly,E-Wallet,1,2.4,0
+CUST00030,38,10.58,17,680.0,2,3.9,Quarterly,E-Wallet,1,3.9,1
+CUST00031,24,7.97,48,212.0,2,6.1,Monthly,Credit Card,0,2.8,0
+CUST00032,45,8.97,28,853.0,3,13.3,Monthly,E-Wallet,0,3.8,1
+CUST00033,34,12.36,41,418.0,0,14.6,Monthly,Credit Card,1,3.0,0
+CUST00034,29,5.89,47,222.0,2,11.6,Monthly,Bank Transfer,1,2.8,0
+CUST00035,46,9.68,18,793.0,3,11.8,Annual,Bank Transfer,0,3.6,0
+CUST00036,22,7.24,78,367.0,1,18.3,Quarterly,Credit Card,1,2.1,1
+CUST00037,40,,71,494.0,0,15.2,Quarterly,Credit Card,0,3.5,0
+CUST00038,48,12.59,13,579.0,1,14.5,Annual,Credit Card,0,4.2,0
+CUST00039,27,9.11,82,663.0,2,15.9,Quarterly,Credit Card,1,4.7,0
+CUST00040,28,,13,504.0,1,10.5,Annual,Bank Transfer,0,4.6,0
+CUST00041,55,4.15,31,333.0,3,22.9,Monthly,Credit Card,1,4.8,0
+CUST00042,34,10.89,2,489.0,2,1.0,Quarterly,Credit Card,0,3.2,0
+CUST00043,37,10.57,16,375.0,2,19.3,Monthly,Bank Transfer,0,2.7,1
+CUST00044,24,15.42,9,495.0,3,16.5,Monthly,E-Wallet,1,4.3,0
+CUST00045,22,7.52,73,743.0,1,13.2,Monthly,Credit Card,0,3.1,0
+CUST00046,26,9.2,38,586.0,3,12.4,Quarterly,E-Wallet,0,3.6,0
+CUST00047,24,9.3,75,487.0,0,11.2,Monthly,Bank Transfer,1,4.3,0
+CUST00048,49,13.55,54,583.0,3,17.5,Monthly,Bank Transfer,0,5.0,1
+CUST00049,38,8.2,56,596.0,2,11.8,Annual,Bank Transfer,0,4.1,0
+CUST00050,46,9.39,86,256.0,2,8.4,Annual,Bank Transfer,1,3.8,0
+CUST00051,54,10.45,87,458.0,4,16.5,Quarterly,Credit Card,0,2.6,0
+CUST00052,30,9.1,45,911.0,3,19.9,Annual,Bank Transfer,1,4.7,0
+CUST00053,34,7.07,34,668.0,1,2.4,Annual,E-Wallet,1,4.0,1
+CUST00054,51,9.12,9,359.0,1,23.8,Quarterly,Bank Transfer,0,3.3,0
+CUST00055,35,11.94,88,341.0,1,6.8,Monthly,Credit Card,0,3.2,0
+CUST00056,28,5.22,8,335.0,1,7.2,Annual,Credit Card,1,3.2,0
+CUST00057,34,8.93,7,606.0,0,5.8,Quarterly,E-Wallet,0,3.6,0
+CUST00058,43,6.26,36,739.0,0,12.0,Monthly,Credit Card,0,2.3,0
+CUST00059,41,12.32,18,555.0,1,5.6,Monthly,Credit Card,0,4.7,0
+CUST00060,36,3.63,3,478.0,1,6.2,Monthly,Credit Card,0,4.5,0
+CUST00061,38,6.71,28,370.0,5,8.6,Annual,E-Wallet,0,3.4,0
+CUST00062,44,9.71,70,509.0,0,12.7,Monthly,Credit Card,1,3.2,0
+CUST00063,46,13.51,44,302.0,2,13.2,Annual,Credit Card,1,3.6,0
+CUST00064,45,8.29,21,102.0,0,18.2,Annual,Bank Transfer,0,3.7,0
+CUST00065,49,6.72,28,745.0,2,18.1,Quarterly,Credit Card,0,3.3,0
+CUST00066,35,14.52,54,269.0,1,17.1,Quarterly,E-Wallet,1,4.5,0
+CUST00067,21,3.87,54,392.0,2,10.7,Monthly,Bank Transfer,0,2.3,1
+CUST00068,45,2.5,65,568.0,3,2.8,Monthly,Bank Transfer,1,3.0,0
+CUST00069,27,9.91,21,708.0,2,2.7,Monthly,E-Wallet,1,4.3,0
+CUST00070,29,6.89,13,496.0,1,17.1,Annual,E-Wallet,1,3.9,0
+CUST00071,44,5.23,57,235.0,4,16.2,Monthly,Credit Card,0,3.0,1
+CUST00072,21,10.77,49,396.0,2,8.9,Monthly,Credit Card,0,4.0,0
+CUST00073,28,9.28,54,328.0,5,4.8,Monthly,E-Wallet,0,2.9,0
+CUST00074,44,6.69,10,443.0,0,6.8,Annual,Credit Card,0,3.3,0
+CUST00075,31,4.4,53,672.0,1,12.9,Monthly,E-Wallet,0,4.5,0
+CUST00076,37,11.29,44,50.0,0,12.9,Annual,E-Wallet,1,4.4,0
+CUST00077,28,10.58,47,376.0,2,17.2,Monthly,Credit Card,1,3.9,0
+CUST00078,55,8.18,53,363.0,1,9.7,Quarterly,E-Wallet,1,2.7,0
+CUST00079,55,14.41,74,224.0,2,10.8,Monthly,Credit Card,1,3.3,0
+CUST00080,53,5.08,46,555.0,2,17.6,Quarterly,Bank Transfer,0,3.7,0
+CUST00081,25,3.62,13,195.0,2,1.4,Quarterly,Credit Card,0,4.9,0
+CUST00082,48,6.29,37,216.0,3,13.6,Monthly,E-Wallet,0,2.0,0
+CUST00083,27,8.35,24,603.0,1,10.3,Quarterly,Bank Transfer,0,2.8,0
+CUST00084,29,9.28,2,720.0,1,15.6,Quarterly,Bank Transfer,0,4.6,0
+CUST00085,28,7.73,86,436.0,3,14.6,Quarterly,E-Wallet,1,4.8,0
+CUST00086,32,9.63,81,231.0,1,8.5,Annual,Bank Transfer,0,3.5,0
+CUST00087,54,4.5,14,323.0,1,9.5,Monthly,Credit Card,0,5.0,0
+CUST00088,53,13.12,10,631.0,4,1.0,Quarterly,E-Wallet,0,2.9,0
+CUST00089,43,8.24,35,471.0,1,15.7,Annual,Bank Transfer,0,2.2,0
+CUST00090,44,12.08,25,432.0,1,13.2,Annual,E-Wallet,0,4.3,0
+CUST00091,55,9.6,3,506.0,1,19.0,Annual,E-Wallet,0,4.8,1
+CUST00092,42,9.96,17,443.0,2,10.0,Monthly,Credit Card,1,4.8,0
+CUST00093,47,10.32,12,728.0,2,16.6,Annual,Credit Card,1,2.8,1
+CUST00094,55,9.93,54,315.0,4,6.7,Quarterly,Credit Card,0,3.8,0
+CUST00095,21,10.56,24,294.0,2,1.0,Monthly,Bank Transfer,1,4.4,1
+CUST00096,55,12.75,29,201.0,1,11.5,Annual,Credit Card,0,3.9,0
+CUST00097,34,9.13,43,353.0,2,9.2,Quarterly,E-Wallet,1,4.9,1
+CUST00098,23,10.77,25,253.0,3,6.7,Monthly,Credit Card,0,3.2,0
+CUST00099,21,8.21,60,489.0,3,16.5,Monthly,Credit Card,1,3.5,0
+CUST00100,25,13.11,90,454.0,3,18.0,Annual,Credit Card,1,3.8,0
+CUST00101,46,6.34,65,256.0,1,12.5,Monthly,Credit Card,1,4.3,0
+CUST00102,34,14.26,84,556.0,5,11.1,Monthly,Bank Transfer,0,3.4,0
+CUST00103,47,8.37,28,723.0,0,12.3,Monthly,Credit Card,0,4.4,0
+CUST00104,29,3.92,16,514.0,2,8.7,Monthly,Credit Card,0,5.0,0
+CUST00105,35,8.91,47,50.0,0,14.8,Annual,Credit Card,0,3.1,0
+CUST00106,35,6.32,81,808.0,0,4.3,Monthly,E-Wallet,0,3.5,0
+CUST00107,46,11.19,92,584.0,2,6.6,Quarterly,E-Wallet,1,4.5,0
+CUST00108,33,6.41,58,802.0,4,8.0,Annual,Credit Card,1,5.0,0
+CUST00109,52,7.07,76,646.0,3,14.7,Quarterly,Bank Transfer,0,4.2,1
+CUST00110,52,2.5,27,682.0,0,10.5,Monthly,Credit Card,0,2.9,1
+CUST00111,24,7.05,53,487.0,0,18.8,Annual,Credit Card,1,3.8,0
+CUST00112,50,2.5,42,403.0,2,16.0,Monthly,Bank Transfer,0,4.5,0
+CUST00113,43,3.43,59,517.0,1,8.0,Monthly,Credit Card,0,2.9,0
+CUST00114,35,10.93,47,322.0,0,15.2,Quarterly,E-Wallet,0,2.6,1
+CUST00115,49,11.01,94,528.0,1,10.0,Annual,Credit Card,1,3.3,0
+CUST00116,33,9.86,34,50.0,2,14.4,Annual,E-Wallet,0,4.2,0
+CUST00117,52,5.41,37,458.0,0,16.3,Annual,Credit Card,1,2.4,0
+CUST00118,27,8.35,6,692.0,3,17.6,Annual,Bank Transfer,0,3.0,0
+CUST00119,42,8.49,7,467.0,0,13.0,Annual,E-Wallet,0,3.8,0
+CUST00120,48,4.79,96,761.0,0,20.0,Annual,Credit Card,0,4.6,0
+CUST00121,22,13.31,96,403.0,1,14.2,Monthly,Bank Transfer,0,3.9,0
+CUST00122,26,11.31,25,630.0,2,12.7,Monthly,Credit Card,0,,0
+CUST00123,48,,33,292.0,1,10.5,Quarterly,Bank Transfer,0,4.5,0
+CUST00124,48,8.59,55,623.0,4,8.8,Quarterly,Credit Card,1,5.0,0
+CUST00125,40,9.17,58,492.0,5,14.1,Monthly,Credit Card,0,,0
+CUST00126,50,2.5,7,410.0,1,12.5,Monthly,Bank Transfer,1,1.8,0
+CUST00127,31,7.71,57,50.0,2,13.3,Monthly,Credit Card,1,3.7,0
+CUST00128,48,6.32,12,404.0,1,14.4,Quarterly,Bank Transfer,1,4.4,1
+CUST00129,45,5.29,16,488.0,5,13.3,Annual,Credit Card,1,5.0,0
+CUST00130,53,7.6,80,599.0,2,22.1,Annual,Credit Card,0,4.2,0
+CUST00131,21,14.25,43,731.0,0,9.4,Annual,Bank Transfer,0,2.8,0
+CUST00132,47,10.55,77,816.0,0,14.2,Annual,Bank Transfer,1,2.9,0
+CUST00133,33,6.67,7,674.0,0,10.9,Monthly,Credit Card,1,3.0,0
+CUST00134,23,10.33,51,349.0,3,1.0,Monthly,Credit Card,1,3.9,0
+CUST00135,26,12.98,73,395.0,1,11.0,Monthly,Credit Card,1,3.2,0
+CUST00136,28,11.46,32,583.0,5,7.3,Quarterly,Credit Card,0,1.0,1
+CUST00137,47,8.69,75,544.0,2,11.7,Monthly,Credit Card,0,2.5,0
+CUST00138,29,6.43,8,743.0,3,11.9,Quarterly,Credit Card,1,3.2,0
+CUST00139,53,10.73,87,896.0,4,13.9,Quarterly,Bank Transfer,0,2.4,0
+CUST00140,44,9.76,89,858.0,0,9.3,Monthly,Bank Transfer,0,2.5,1
+CUST00141,35,11.36,72,719.0,0,10.0,Annual,Credit Card,0,5.0,0
+CUST00142,52,10.53,45,545.0,0,15.5,Quarterly,Credit Card,0,3.6,0
+CUST00143,52,11.86,86,693.0,1,8.0,Monthly,Credit Card,0,3.3,0
+CUST00144,44,6.79,59,749.0,1,2.8,Monthly,Bank Transfer,1,4.2,0
+CUST00145,32,12.72,4,423.0,1,12.8,Quarterly,E-Wallet,1,4.6,1
+CUST00146,22,9.13,67,354.0,1,17.4,Monthly,Bank Transfer,1,5.0,1
+CUST00147,23,,29,312.0,2,15.4,Monthly,Bank Transfer,0,5.0,0
+CUST00148,37,6.29,29,292.0,1,12.9,Quarterly,E-Wallet,1,4.0,0
+CUST00149,22,14.06,28,201.0,1,18.3,Annual,Credit Card,0,2.2,0
+CUST00150,22,9.13,77,495.0,2,17.4,Monthly,Credit Card,1,2.7,0
+CUST00151,48,6.42,79,270.0,2,10.3,Annual,Bank Transfer,0,3.2,0
+CUST00152,43,6.95,87,309.0,2,13.2,Annual,Credit Card,0,4.1,1
+CUST00153,52,7.47,44,576.0,1,13.5,Monthly,Bank Transfer,0,3.7,0
+CUST00154,53,9.86,90,483.0,2,11.6,Quarterly,Bank Transfer,1,2.3,0
+CUST00155,21,10.17,4,527.0,3,17.7,Monthly,E-Wallet,0,2.1,0
+CUST00156,39,6.66,90,696.0,3,11.2,Monthly,Credit Card,0,3.8,1
+CUST00157,22,8.42,9,606.0,0,9.5,Quarterly,Bank Transfer,0,3.7,0
+CUST00158,46,15.36,5,723.0,1,1.0,Quarterly,Bank Transfer,0,3.4,0
+CUST00159,52,14.03,56,464.0,1,8.0,Monthly,E-Wallet,0,4.0,0
+CUST00160,26,9.9,96,740.0,3,5.4,Annual,E-Wallet,0,4.7,0
+CUST00161,52,8.62,84,515.0,3,11.8,Annual,E-Wallet,0,3.9,0
+CUST00162,24,8.88,50,480.0,1,5.7,Annual,Credit Card,0,2.8,0
+CUST00163,31,10.46,75,713.0,0,15.0,Monthly,Credit Card,0,5.0,0
+CUST00164,37,5.23,15,293.0,1,17.5,Annual,Credit Card,0,3.4,0
+CUST00165,44,7.68,32,814.0,1,11.8,Monthly,Credit Card,1,3.6,0
+CUST00166,25,3.16,28,399.0,1,7.1,Monthly,E-Wallet,0,3.0,0
+CUST00167,54,9.78,22,231.0,2,13.4,Annual,E-Wallet,0,2.6,0
+CUST00168,26,10.57,17,568.0,3,21.5,Quarterly,Credit Card,0,2.7,0
+CUST00169,42,6.95,59,382.0,3,19.9,Quarterly,Credit Card,0,2.5,0
+CUST00170,31,13.54,90,815.0,2,5.0,Monthly,Credit Card,0,,0
+CUST00171,36,4.58,71,372.0,0,4.8,Monthly,E-Wallet,0,3.5,0
+CUST00172,53,3.81,57,507.0,2,3.5,Quarterly,Credit Card,0,4.6,1
+CUST00173,29,9.22,26,193.0,3,6.3,Monthly,Credit Card,0,2.7,1
+CUST00174,26,11.85,25,596.0,3,13.3,Quarterly,Credit Card,1,5.0,0
+CUST00175,36,13.89,10,310.0,0,9.2,Monthly,Credit Card,1,4.8,0
+CUST00176,49,7.03,45,575.0,1,7.8,Annual,E-Wallet,1,3.6,0
+CUST00177,23,11.95,83,373.0,2,17.2,Quarterly,Credit Card,0,2.6,0
+CUST00178,40,8.38,11,82.0,2,14.7,Quarterly,Credit Card,1,2.2,0
+CUST00179,39,7.95,77,474.0,1,3.5,Annual,Credit Card,1,3.5,0
+CUST00180,46,11.33,53,466.0,1,16.9,Quarterly,Bank Transfer,1,3.7,0
+CUST00181,23,10.59,72,609.0,3,14.5,Monthly,Bank Transfer,0,3.4,1
+CUST00182,39,3.46,68,730.0,2,14.6,Monthly,Credit Card,0,4.6,0
+CUST00183,40,13.22,95,794.0,1,9.1,Quarterly,Credit Card,0,4.9,0
+CUST00184,52,12.92,28,606.0,0,11.1,Monthly,E-Wallet,0,4.0,1
+CUST00185,27,6.5,75,500.0,1,2.1,Quarterly,Credit Card,0,4.1,0
+CUST00186,53,9.77,65,193.0,1,16.3,Monthly,Bank Transfer,1,3.3,0
+CUST00187,38,10.08,49,486.0,1,7.0,Monthly,Credit Card,0,3.6,1
+CUST00188,21,9.33,47,489.0,3,7.6,Monthly,Credit Card,0,4.0,1
+CUST00189,31,6.74,52,414.0,2,7.6,Annual,Bank Transfer,0,3.3,0
+CUST00190,48,,88,564.0,5,21.0,Quarterly,E-Wallet,0,4.2,0
+CUST00191,45,8.42,54,652.0,0,8.7,Annual,Bank Transfer,0,2.6,0
+CUST00192,43,12.25,60,303.0,2,16.7,Annual,Credit Card,0,,0
+CUST00193,51,10.24,57,300.0,2,11.9,Monthly,Bank Transfer,0,2.7,0
+CUST00194,50,7.31,47,425.0,0,7.9,Monthly,Bank Transfer,0,3.0,0
+CUST00195,55,10.97,31,339.0,1,6.9,Annual,Bank Transfer,1,3.3,0
+CUST00196,27,2.5,46,155.0,1,8.9,Annual,Bank Transfer,0,4.5,0
+CUST00197,36,12.18,26,271.0,3,11.6,Monthly,Credit Card,0,3.6,0
+CUST00198,46,2.93,5,228.0,1,15.0,Annual,Bank Transfer,0,2.4,0
+CUST00199,22,7.34,84,668.0,1,9.6,Monthly,Bank Transfer,0,2.3,0
+CUST00200,21,4.92,52,757.0,1,9.5,Monthly,Credit Card,0,3.2,0
+CUST00201,32,4.36,75,253.0,2,7.6,Quarterly,Bank Transfer,0,4.4,0
+CUST00202,25,12.21,54,548.0,1,6.0,Monthly,Credit Card,0,4.9,0
+CUST00203,52,7.0,33,607.0,2,5.6,Monthly,Credit Card,0,2.2,0
+CUST00204,29,9.61,50,181.0,3,16.9,Monthly,E-Wallet,1,3.9,0
+CUST00205,55,8.35,38,479.0,2,9.4,Monthly,Credit Card,0,3.2,0
+CUST00206,39,10.03,27,906.0,3,9.8,Quarterly,Credit Card,0,3.3,0
+CUST00207,36,8.75,15,572.0,2,8.7,Annual,Bank Transfer,0,2.6,1
+CUST00208,23,4.39,96,406.0,1,10.4,Annual,E-Wallet,1,3.4,0
+CUST00209,40,11.69,61,349.0,2,13.9,Quarterly,E-Wallet,0,2.6,1
+CUST00210,44,6.92,21,86.0,2,9.6,Monthly,Bank Transfer,0,3.4,0
+CUST00211,53,3.52,46,535.0,2,12.9,Monthly,Credit Card,1,4.6,0
+CUST00212,44,7.13,69,801.0,1,19.1,Monthly,E-Wallet,0,4.2,0
+CUST00213,31,13.3,6,304.0,2,7.9,Monthly,Bank Transfer,0,5.0,0
+CUST00214,28,11.22,38,102.0,1,9.8,Monthly,Credit Card,0,4.1,0
+CUST00215,40,7.38,62,330.0,2,15.2,Annual,E-Wallet,1,,0
+CUST00216,55,7.38,86,609.0,3,19.5,Annual,Credit Card,1,4.1,0
+CUST00217,45,7.47,62,373.0,4,5.8,Quarterly,Credit Card,1,2.9,0
+CUST00218,55,15.15,82,302.0,2,3.5,Quarterly,E-Wallet,1,1.7,0
+CUST00219,45,9.72,78,453.0,3,12.0,Monthly,Bank Transfer,1,4.3,0
+CUST00220,49,9.88,74,491.0,1,11.5,Quarterly,Credit Card,0,2.0,1
+CUST00221,38,11.8,46,200.0,1,15.5,Quarterly,Credit Card,1,4.6,0
+CUST00222,38,9.26,13,411.0,0,14.7,Monthly,Bank Transfer,0,4.3,0
+CUST00223,22,7.67,95,360.0,4,11.8,Monthly,Credit Card,0,2.8,0
+CUST00224,55,7.87,94,335.0,3,17.2,Annual,Credit Card,0,3.2,1
+CUST00225,36,8.27,3,267.0,0,8.6,Quarterly,Bank Transfer,0,3.6,0
+CUST00226,53,8.38,94,619.0,0,13.1,Annual,E-Wallet,1,,0
+CUST00227,24,10.83,6,334.0,4,5.9,Annual,Bank Transfer,0,4.1,0
+CUST00228,53,8.67,93,91.0,2,11.8,Annual,E-Wallet,0,4.2,0
+CUST00229,34,10.84,8,498.0,5,4.7,Monthly,E-Wallet,0,2.3,1
+CUST00230,41,8.24,44,581.0,2,6.4,Monthly,Bank Transfer,1,2.9,0
+CUST00231,40,8.75,33,307.0,0,20.5,Monthly,Credit Card,1,3.6,0
+CUST00232,28,2.5,81,349.0,2,2.9,Monthly,E-Wallet,0,4.6,0
+CUST00233,27,11.43,75,333.0,0,10.9,Quarterly,Credit Card,0,4.2,0
+CUST00234,23,9.61,77,388.0,0,16.1,Quarterly,Credit Card,0,1.5,0
+CUST00235,37,11.69,50,649.0,6,23.1,Quarterly,Credit Card,0,3.3,0
+CUST00236,53,2.5,11,429.0,1,12.9,Monthly,E-Wallet,0,4.0,1
+CUST00237,32,15.18,95,601.0,2,13.2,Annual,Credit Card,1,2.9,0
+CUST00238,42,8.05,28,276.0,2,12.2,Monthly,Credit Card,0,2.8,1
+CUST00239,42,12.05,70,381.0,1,17.3,Monthly,Bank Transfer,0,2.9,0
+CUST00240,50,5.17,41,622.0,3,14.2,Quarterly,E-Wallet,0,3.3,1
+CUST00241,28,10.46,16,305.0,3,9.1,Annual,Bank Transfer,0,2.7,0
+CUST00242,47,5.13,68,632.0,2,17.6,Monthly,Credit Card,0,4.2,0
+CUST00243,47,6.5,48,337.0,2,9.7,Monthly,Credit Card,0,2.8,0
+CUST00244,54,14.62,56,392.0,0,4.0,Quarterly,Bank Transfer,0,2.7,0
+CUST00245,41,7.89,64,751.0,1,4.0,Monthly,Credit Card,1,3.2,0
+CUST00246,50,9.2,59,372.0,2,11.0,Monthly,Bank Transfer,0,4.9,0
+CUST00247,53,11.28,90,,3,12.5,Quarterly,Credit Card,0,4.1,1
+CUST00248,48,10.09,62,561.0,2,16.8,Monthly,E-Wallet,0,4.1,1
+CUST00249,53,8.98,76,491.0,3,15.2,Monthly,Bank Transfer,1,3.9,1
+CUST00250,25,9.67,11,496.0,2,12.4,Monthly,Credit Card,0,2.7,1
+CUST00251,39,16.19,89,440.0,1,17.1,Annual,E-Wallet,0,3.0,0
+CUST00252,24,8.32,18,216.0,2,12.1,Annual,Credit Card,1,2.9,1
+CUST00253,55,9.14,19,513.0,2,5.5,Monthly,Credit Card,0,4.6,1
+CUST00254,37,11.86,87,318.0,0,4.5,Monthly,E-Wallet,0,3.9,0
+CUST00255,48,12.04,55,590.0,5,18.4,Monthly,Credit Card,1,2.1,1
+CUST00256,50,12.3,82,697.0,0,1.0,Monthly,Credit Card,0,4.9,1
+CUST00257,49,10.54,26,125.0,1,11.0,Quarterly,Credit Card,1,3.3,0
+CUST00258,26,4.84,6,697.0,2,26.9,Quarterly,Credit Card,0,4.2,0
+CUST00259,55,13.73,4,376.0,2,14.3,Monthly,Credit Card,0,4.5,0
+CUST00260,44,4.83,29,426.0,0,11.0,Monthly,Bank Transfer,1,1.3,1
+CUST00261,49,9.47,59,286.0,1,3.6,Monthly,Bank Transfer,1,4.0,1
+CUST00262,51,6.09,17,484.0,3,20.1,Monthly,Credit Card,1,3.4,0
+CUST00263,55,,43,462.0,3,18.1,Monthly,Credit Card,0,1.4,0
+CUST00264,53,9.55,80,644.0,2,15.4,Quarterly,E-Wallet,0,2.6,0
+CUST00265,41,9.53,66,317.0,2,12.0,Quarterly,E-Wallet,0,3.2,0
+CUST00266,52,9.85,34,749.0,0,14.9,Quarterly,Bank Transfer,0,4.4,0
+CUST00267,43,13.66,8,570.0,2,11.3,Monthly,E-Wallet,0,3.4,0
+CUST00268,53,9.95,13,466.0,2,7.1,Quarterly,Bank Transfer,0,3.7,1
+CUST00269,23,7.72,8,,2,16.8,Monthly,Credit Card,0,3.3,0
+CUST00270,38,11.59,94,395.0,1,11.7,Monthly,Credit Card,0,4.6,0
+CUST00271,45,12.31,96,407.0,1,14.6,Quarterly,Credit Card,0,4.1,0
+CUST00272,51,4.57,94,480.0,1,11.4,Monthly,E-Wallet,1,3.7,0
+CUST00273,23,10.41,65,412.0,2,14.3,Quarterly,Bank Transfer,1,2.6,0
+CUST00274,44,10.74,43,335.0,2,11.9,Quarterly,Bank Transfer,0,3.7,0
+CUST00275,52,7.55,39,481.0,2,11.5,Annual,Credit Card,1,5.0,0
+CUST00276,42,12.9,81,299.0,2,12.1,Annual,Bank Transfer,0,4.3,0
+CUST00277,43,8.02,59,508.0,2,26.8,Monthly,E-Wallet,1,2.9,1
+CUST00278,22,8.9,84,410.0,1,16.0,Annual,E-Wallet,0,5.0,0
+CUST00279,47,7.95,88,575.0,0,24.9,Quarterly,Credit Card,0,2.9,0
+CUST00280,22,8.55,86,628.0,1,12.0,Quarterly,Bank Transfer,1,4.2,0
+CUST00281,46,4.99,93,628.0,1,10.5,Monthly,Credit Card,0,3.6,0
+CUST00282,37,,86,507.0,0,6.6,Annual,Bank Transfer,1,3.8,0
+CUST00283,53,13.6,44,528.0,0,20.0,Monthly,Bank Transfer,1,3.8,0
+CUST00284,29,5.79,9,392.0,1,7.5,Annual,Credit Card,1,3.4,0
+CUST00285,49,5.33,37,572.0,1,21.0,Monthly,E-Wallet,0,3.2,1
+CUST00286,46,2.5,74,592.0,1,6.9,Quarterly,Credit Card,0,2.4,1
+CUST00287,55,6.46,36,168.0,1,16.4,Monthly,E-Wallet,0,2.6,0
+CUST00288,45,4.27,92,518.0,2,4.0,Monthly,Credit Card,1,3.9,0
+CUST00289,44,13.75,28,696.0,0,9.8,Monthly,Bank Transfer,0,3.0,0
+CUST00290,33,,42,386.0,2,12.1,Monthly,E-Wallet,0,2.8,0
+CUST00291,27,6.3,43,347.0,3,9.0,Monthly,Credit Card,0,5.0,0
+CUST00292,40,15.71,85,374.0,1,11.2,Monthly,Bank Transfer,0,5.0,0
+CUST00293,21,11.64,88,179.0,1,11.2,Quarterly,Bank Transfer,0,4.1,0
+CUST00294,28,7.46,42,473.0,3,16.0,Annual,Credit Card,0,4.2,0
+CUST00295,36,2.5,66,455.0,3,1.6,Quarterly,Bank Transfer,1,2.9,0
+CUST00296,34,15.83,55,485.0,0,9.2,Monthly,Bank Transfer,0,2.5,0
+CUST00297,32,4.05,72,525.0,0,18.3,Monthly,E-Wallet,1,3.3,0
+CUST00298,43,3.23,48,306.0,1,14.8,Monthly,E-Wallet,1,3.6,0
+CUST00299,35,11.77,91,499.0,2,18.4,Annual,Bank Transfer,0,,0
+CUST00300,48,16.31,22,530.0,1,15.8,Annual,Bank Transfer,0,2.0,0
+CUST00301,54,12.93,27,362.0,4,6.6,Monthly,E-Wallet,0,5.0,0
+CUST00302,22,10.3,93,526.0,0,15.3,Monthly,Bank Transfer,0,3.8,1
+CUST00303,52,10.4,67,,2,12.5,Annual,Credit Card,1,2.2,0
+CUST00304,43,11.23,13,336.0,0,23.3,Annual,Credit Card,0,3.7,0
+CUST00305,42,10.93,45,501.0,1,16.0,Annual,E-Wallet,0,2.8,0
+CUST00306,45,9.4,10,398.0,2,14.6,Annual,Bank Transfer,0,2.7,1
+CUST00307,42,8.83,9,575.0,0,15.3,Monthly,Bank Transfer,1,2.6,1
+CUST00308,42,8.3,54,407.0,3,14.3,Monthly,Credit Card,0,3.4,0
+CUST00309,26,6.09,27,218.0,0,14.2,Monthly,E-Wallet,0,5.0,0
+CUST00310,35,7.6,34,498.0,2,10.7,Monthly,Credit Card,0,3.7,0
+CUST00311,53,3.08,1,491.0,1,14.7,Monthly,Bank Transfer,1,4.2,1
+CUST00312,28,8.19,32,255.0,1,16.7,Quarterly,Credit Card,0,4.4,0
+CUST00313,25,5.34,89,585.0,2,17.3,Monthly,Credit Card,0,3.5,0
+CUST00314,24,4.97,93,576.0,2,16.7,Monthly,E-Wallet,0,2.6,0
+CUST00315,26,9.08,71,293.0,0,19.5,Monthly,E-Wallet,1,2.2,0
+CUST00316,52,12.95,67,331.0,0,17.6,Monthly,Credit Card,0,3.3,1
+CUST00317,50,11.44,84,424.0,0,15.1,Monthly,Credit Card,1,4.6,0
+CUST00318,55,3.47,20,313.0,3,6.3,Annual,Credit Card,0,4.4,0
+CUST00319,36,5.33,94,565.0,1,6.3,Annual,Credit Card,0,3.8,0
+CUST00320,33,11.51,35,477.0,0,10.8,Monthly,Credit Card,1,3.9,0
+CUST00321,50,5.36,91,253.0,3,12.2,Monthly,E-Wallet,1,3.5,0
+CUST00322,39,7.78,90,302.0,1,19.0,Monthly,E-Wallet,1,3.2,0
+CUST00323,37,10.26,78,664.0,2,1.0,Quarterly,Credit Card,1,2.9,0
+CUST00324,39,5.4,17,726.0,3,6.8,Monthly,Bank Transfer,0,2.3,1
+CUST00325,48,8.84,18,547.0,3,11.0,Monthly,Credit Card,1,5.0,0
+CUST00326,46,4.23,45,412.0,1,7.0,Annual,Credit Card,0,3.8,0
+CUST00327,46,6.58,93,371.0,1,8.0,Monthly,Credit Card,0,3.2,0
+CUST00328,43,9.52,84,549.0,2,9.5,Monthly,Bank Transfer,0,5.0,0
+CUST00329,29,3.4,53,464.0,1,7.3,Monthly,Credit Card,0,5.0,0
+CUST00330,32,9.91,91,160.0,3,8.1,Monthly,Credit Card,0,5.0,0
+CUST00331,21,8.44,82,636.0,2,18.8,Monthly,Credit Card,0,3.4,0
+CUST00332,21,10.27,68,692.0,0,15.1,Annual,Credit Card,0,3.7,0
+CUST00333,54,9.22,65,583.0,4,15.8,Quarterly,Credit Card,0,4.2,0
+CUST00334,52,12.87,1,254.0,1,11.8,Quarterly,E-Wallet,0,5.0,0
+CUST00335,45,8.9,58,335.0,1,17.1,Monthly,Bank Transfer,0,3.7,0
+CUST00336,21,7.13,26,116.0,3,16.2,Monthly,E-Wallet,0,2.7,0
+CUST00337,36,8.89,20,737.0,1,15.0,Monthly,Credit Card,0,2.9,1
+CUST00338,25,10.24,87,386.0,1,8.7,Monthly,Credit Card,0,4.7,1
+CUST00339,42,8.66,10,870.0,3,9.8,Quarterly,Credit Card,0,4.2,0
+CUST00340,49,8.63,59,802.0,1,17.3,Monthly,Credit Card,1,3.4,0
+CUST00341,23,6.25,75,287.0,1,9.4,Annual,Bank Transfer,1,3.4,0
+CUST00342,32,6.38,41,323.0,3,5.6,Monthly,Credit Card,0,,0
+CUST00343,46,4.01,5,534.0,0,9.3,Monthly,Credit Card,0,4.7,0
+CUST00344,36,14.1,65,134.0,3,19.8,Monthly,Bank Transfer,1,2.9,0
+CUST00345,42,4.52,17,371.0,3,9.3,Monthly,Credit Card,0,2.5,0
+CUST00346,49,6.28,22,353.0,1,13.6,Monthly,E-Wallet,1,5.0,1
+CUST00347,34,6.2,41,783.0,4,8.9,Monthly,Credit Card,0,3.6,0
+CUST00348,48,11.36,93,479.0,2,15.8,Monthly,Bank Transfer,0,3.5,0
+CUST00349,25,7.56,68,399.0,2,14.7,Quarterly,Credit Card,0,4.2,0
+CUST00350,50,12.49,69,336.0,1,4.5,Quarterly,E-Wallet,0,2.7,0
+CUST00351,25,6.34,11,611.0,4,13.3,Monthly,Credit Card,0,4.3,0
+CUST00352,32,9.39,56,361.0,1,3.6,Monthly,Bank Transfer,0,3.3,0
+CUST00353,36,5.83,51,441.0,3,9.2,Quarterly,Credit Card,0,4.6,0
+CUST00354,46,15.36,21,335.0,1,11.9,Annual,Bank Transfer,0,2.2,0
+CUST00355,46,4.7,76,177.0,3,21.2,Quarterly,Credit Card,1,4.0,0
+CUST00356,41,9.49,26,271.0,1,13.6,Monthly,Credit Card,1,3.4,0
+CUST00357,53,10.53,19,360.0,1,8.2,Quarterly,E-Wallet,0,3.0,0
+CUST00358,50,9.82,60,403.0,1,10.4,Quarterly,E-Wallet,0,4.3,1
+CUST00359,43,7.91,71,411.0,1,16.6,Monthly,Credit Card,0,3.5,0
+CUST00360,30,8.08,47,434.0,5,8.2,Annual,E-Wallet,0,4.0,0
+CUST00361,25,8.64,71,362.0,2,17.5,Monthly,Credit Card,0,4.7,1
+CUST00362,54,8.03,26,693.0,0,9.4,Annual,E-Wallet,0,4.3,0
+CUST00363,51,11.58,40,621.0,2,7.4,Quarterly,Bank Transfer,0,2.6,0
+CUST00364,30,15.57,5,426.0,5,9.5,Quarterly,Bank Transfer,0,3.1,0
+CUST00365,39,6.72,21,496.0,0,3.9,Quarterly,E-Wallet,1,4.0,0
+CUST00366,52,4.12,78,383.0,0,1.1,Monthly,E-Wallet,1,4.3,0
+CUST00367,21,8.22,4,50.0,3,11.6,Monthly,Credit Card,0,3.2,0
+CUST00368,25,,23,454.0,0,11.7,Annual,E-Wallet,0,3.8,1
+CUST00369,24,5.93,84,505.0,1,13.3,Quarterly,Credit Card,0,3.8,0
+CUST00370,36,13.75,15,160.0,1,11.6,Annual,E-Wallet,1,3.9,0
+CUST00371,44,13.87,93,540.0,0,23.6,Annual,Bank Transfer,1,2.5,0
+CUST00372,36,6.73,8,399.0,2,12.8,Annual,Credit Card,1,2.3,0
+CUST00373,22,10.32,41,511.0,2,5.1,Quarterly,Bank Transfer,0,1.6,0
+CUST00374,48,13.71,19,405.0,2,6.4,Monthly,Bank Transfer,1,,0
+CUST00375,52,7.29,46,675.0,2,12.0,Monthly,Bank Transfer,0,2.4,0
+CUST00376,47,7.85,28,491.0,2,9.8,Quarterly,Credit Card,1,5.0,0
+CUST00377,40,6.64,91,630.0,3,5.9,Monthly,Credit Card,1,4.2,1
+CUST00378,44,5.25,68,645.0,2,11.7,Monthly,E-Wallet,0,2.5,1
+CUST00379,32,6.42,15,248.0,0,11.8,Monthly,Credit Card,0,4.6,0
+CUST00380,55,4.58,37,317.0,4,20.0,Annual,Credit Card,1,4.6,0
+CUST00381,53,8.61,1,531.0,2,7.4,Annual,Bank Transfer,0,4.7,0
+CUST00382,53,6.04,67,384.0,1,9.9,Quarterly,Credit Card,0,2.9,0
+CUST00383,32,9.25,24,407.0,2,20.0,Monthly,Bank Transfer,0,4.2,0
+CUST00384,23,3.52,27,682.0,2,13.6,Quarterly,Bank Transfer,0,4.7,0
+CUST00385,21,9.56,40,394.0,0,7.4,Quarterly,Bank Transfer,0,5.0,0
+CUST00386,53,11.17,63,276.0,3,8.4,Monthly,Credit Card,0,2.2,0
+CUST00387,30,2.5,61,300.0,0,5.9,Monthly,Credit Card,0,3.4,0
+CUST00388,49,9.7,36,843.0,0,12.4,Monthly,Credit Card,0,2.8,0
+CUST00389,33,12.43,93,418.0,2,17.2,Quarterly,E-Wallet,0,5.0,0
+CUST00390,32,4.63,24,204.0,5,20.2,Quarterly,Credit Card,0,4.0,0
+CUST00391,51,13.85,24,131.0,1,4.6,Monthly,E-Wallet,0,4.4,1
+CUST00392,22,9.84,4,338.0,3,16.3,Annual,Bank Transfer,0,4.0,0
+CUST00393,55,6.24,67,415.0,1,12.8,Monthly,E-Wallet,0,3.9,0
+CUST00394,43,8.32,34,621.0,0,10.7,Monthly,Credit Card,1,2.8,0
+CUST00395,37,10.29,57,603.0,4,9.9,Monthly,Credit Card,0,3.2,1
+CUST00396,46,,49,449.0,1,2.4,Monthly,E-Wallet,1,3.7,0
+CUST00397,28,10.22,87,368.0,3,15.2,Monthly,Credit Card,0,3.0,0
+CUST00398,49,,53,511.0,0,5.4,Monthly,Credit Card,1,2.9,1
+CUST00399,46,9.04,23,135.0,1,8.3,Monthly,Credit Card,0,3.4,1
+CUST00400,30,3.98,69,807.0,0,14.1,Monthly,E-Wallet,0,3.1,0
+CUST00401,46,8.14,95,568.0,3,2.9,Quarterly,Bank Transfer,0,3.6,0
+CUST00402,54,5.61,53,606.0,1,5.4,Monthly,Bank Transfer,0,3.2,0
+CUST00403,27,6.15,62,257.0,1,18.1,Monthly,Bank Transfer,1,,0
+CUST00404,24,12.46,41,681.0,3,12.6,Annual,Credit Card,0,2.8,0
+CUST00405,31,11.99,57,367.0,2,8.7,Monthly,E-Wallet,0,3.6,0
+CUST00406,49,10.45,60,279.0,6,12.6,Annual,Credit Card,1,4.4,0
+CUST00407,45,5.0,54,443.0,4,15.3,Annual,E-Wallet,0,4.2,0
+CUST00408,41,7.49,70,439.0,1,17.6,Monthly,Credit Card,0,2.2,0
+CUST00409,30,12.38,57,256.0,1,6.4,Annual,Credit Card,0,4.4,0
+CUST00410,29,8.95,10,289.0,3,6.9,Annual,Bank Transfer,0,4.2,0
+CUST00411,44,15.92,40,275.0,2,15.0,Annual,Credit Card,1,4.4,0
+CUST00412,55,,7,277.0,1,15.2,Quarterly,Bank Transfer,1,4.6,0
+CUST00413,55,9.11,38,380.0,1,5.3,Monthly,Credit Card,1,2.9,0
+CUST00414,38,7.51,85,200.0,1,7.1,Annual,Credit Card,1,3.3,0
+CUST00415,52,8.93,61,326.0,1,11.0,Monthly,Bank Transfer,0,5.0,0
+CUST00416,44,8.01,84,638.0,1,12.1,Monthly,Bank Transfer,0,5.0,0
+CUST00417,43,10.77,3,598.0,5,12.3,Monthly,Credit Card,0,3.5,1
+CUST00418,52,11.56,51,261.0,1,5.2,Monthly,Bank Transfer,1,4.1,0
+CUST00419,32,5.98,86,622.0,2,12.2,Monthly,Credit Card,1,4.2,0
+CUST00420,33,4.24,47,96.0,1,8.4,Quarterly,Credit Card,0,5.0,0
+CUST00421,43,2.62,68,887.0,1,6.2,Annual,Credit Card,0,3.9,0
+CUST00422,45,10.13,92,684.0,0,11.9,Monthly,E-Wallet,1,2.5,0
+CUST00423,55,4.97,76,349.0,0,11.4,Annual,Bank Transfer,0,3.2,0
+CUST00424,50,2.5,38,519.0,2,16.0,Annual,Credit Card,1,5.0,0
+CUST00425,37,9.74,36,198.0,0,7.7,Monthly,Bank Transfer,0,2.5,0
+CUST00426,40,16.48,41,461.0,0,13.2,Monthly,E-Wallet,0,3.6,0
+CUST00427,45,8.48,69,417.0,3,4.2,Annual,Credit Card,0,5.0,0
+CUST00428,42,11.18,13,300.0,2,10.6,Quarterly,E-Wallet,0,2.9,0
+CUST00429,33,8.76,87,366.0,0,14.3,Annual,Credit Card,0,1.1,0
+CUST00430,39,8.18,58,348.0,4,14.7,Quarterly,E-Wallet,0,1.3,0
+CUST00431,32,11.44,50,246.0,0,14.8,Monthly,Bank Transfer,1,2.9,0
+CUST00432,39,7.57,30,296.0,2,16.0,Monthly,Credit Card,0,2.0,0
+CUST00433,32,9.36,62,190.0,2,9.8,Quarterly,Credit Card,1,4.5,0
+CUST00434,29,9.53,25,604.0,3,14.5,Monthly,E-Wallet,0,3.8,1
+CUST00435,27,6.36,27,282.0,4,21.3,Quarterly,E-Wallet,1,1.7,0
+CUST00436,48,11.67,51,230.0,0,9.7,Annual,Bank Transfer,0,2.2,0
+CUST00437,34,7.94,78,601.0,1,18.9,Quarterly,Credit Card,0,4.7,0
+CUST00438,51,6.08,57,,0,16.4,Annual,Credit Card,0,3.8,0
+CUST00439,39,10.22,47,595.0,2,10.7,Monthly,Credit Card,0,4.9,0
+CUST00440,36,5.62,39,615.0,1,11.1,Quarterly,Credit Card,1,4.6,0
+CUST00441,25,8.59,16,799.0,3,12.6,Quarterly,Bank Transfer,0,2.6,0
+CUST00442,55,,22,422.0,5,16.1,Annual,E-Wallet,0,4.4,1
+CUST00443,32,11.97,85,188.0,2,14.0,Quarterly,Bank Transfer,1,4.1,0
+CUST00444,45,10.02,54,499.0,1,9.6,Monthly,Credit Card,0,1.8,0
+CUST00445,41,8.42,21,330.0,2,1.6,Annual,Bank Transfer,1,2.4,1
+CUST00446,43,11.12,72,278.0,1,15.4,Quarterly,E-Wallet,0,5.0,0
+CUST00447,36,12.95,16,468.0,1,2.3,Monthly,Bank Transfer,1,2.8,1
+CUST00448,34,10.28,59,606.0,1,5.2,Quarterly,Bank Transfer,0,4.0,0
+CUST00449,51,8.53,31,300.0,3,10.0,Annual,E-Wallet,1,3.4,0
+CUST00450,25,4.3,42,679.0,2,5.9,Quarterly,E-Wallet,0,3.8,0
+CUST00451,55,5.09,74,272.0,1,13.6,Monthly,Credit Card,1,3.5,1
+CUST00452,43,7.52,32,406.0,0,10.5,Annual,Credit Card,0,4.5,0
+CUST00453,49,6.55,59,520.0,1,15.9,Annual,E-Wallet,0,4.4,0
+CUST00454,31,7.9,34,380.0,1,4.0,Quarterly,Bank Transfer,0,3.7,0
+CUST00455,38,8.68,9,130.0,0,8.7,Monthly,Credit Card,0,2.8,0
+CUST00456,32,10.2,81,617.0,2,12.0,Monthly,Credit Card,0,3.1,0
+CUST00457,29,8.27,11,338.0,1,12.2,Quarterly,Bank Transfer,1,2.2,1
+CUST00458,30,10.06,96,584.0,1,15.5,Annual,E-Wallet,0,3.3,0
+CUST00459,37,8.71,10,222.0,2,7.4,Monthly,Credit Card,1,2.0,0
+CUST00460,27,2.5,86,253.0,2,9.7,Monthly,Bank Transfer,0,3.8,1
+CUST00461,33,5.49,17,605.0,3,14.5,Monthly,E-Wallet,0,3.9,1
+CUST00462,29,8.04,68,511.0,4,1.0,Quarterly,Credit Card,1,4.5,0
+CUST00463,47,4.63,48,371.0,1,13.9,Monthly,Credit Card,1,2.5,0
+CUST00464,22,10.42,52,514.0,1,15.8,Monthly,E-Wallet,0,2.6,1
+CUST00465,25,13.4,25,278.0,1,5.3,Monthly,Bank Transfer,0,5.0,0
+CUST00466,49,12.4,21,470.0,2,10.4,Quarterly,Bank Transfer,0,2.4,0
+CUST00467,39,7.82,65,473.0,2,19.5,Monthly,Bank Transfer,0,5.0,0
+CUST00468,28,13.27,63,383.0,2,15.3,Monthly,Credit Card,0,2.8,1
+CUST00469,21,8.98,89,300.0,2,14.2,Annual,E-Wallet,0,2.8,0
+CUST00470,42,7.42,51,463.0,0,17.0,Monthly,Credit Card,0,4.4,0
+CUST00471,37,6.54,36,440.0,3,21.0,Monthly,Credit Card,0,4.1,0
+CUST00472,27,7.53,81,366.0,1,12.1,Annual,Credit Card,1,5.0,0
+CUST00473,45,7.26,88,264.0,2,10.0,Monthly,Credit Card,1,1.9,0
+CUST00474,24,9.05,66,452.0,1,16.9,Quarterly,E-Wallet,0,4.1,0
+CUST00475,26,9.01,15,367.0,2,11.1,Monthly,E-Wallet,0,3.6,0
+CUST00476,51,8.51,96,264.0,1,7.4,Annual,E-Wallet,0,2.6,1
+CUST00477,39,9.9,39,,0,9.3,Monthly,Credit Card,1,5.0,0
+CUST00478,47,12.31,70,739.0,2,13.6,Annual,Bank Transfer,0,3.8,0
+CUST00479,30,11.54,1,384.0,1,9.8,Monthly,Bank Transfer,0,3.5,1
+CUST00480,46,3.75,23,720.0,1,10.1,Monthly,E-Wallet,0,4.0,0
+CUST00481,39,2.5,39,831.0,5,6.9,Annual,Bank Transfer,0,2.0,1
+CUST00482,23,11.49,57,278.0,1,19.2,Annual,Credit Card,0,2.5,1
+CUST00483,33,4.13,81,452.0,1,10.3,Monthly,Credit Card,1,3.3,0
+CUST00484,48,7.78,34,829.0,5,8.4,Annual,Credit Card,0,3.9,0
+CUST00485,40,4.76,41,428.0,5,9.0,Monthly,Bank Transfer,0,4.7,0
+CUST00486,48,2.73,93,457.0,4,16.0,Quarterly,E-Wallet,0,2.8,0
+CUST00487,28,10.23,73,149.0,2,14.9,Monthly,Credit Card,0,2.6,0
+CUST00488,21,10.93,13,354.0,0,9.5,Quarterly,Credit Card,0,4.1,0
+CUST00489,23,6.66,70,550.0,1,12.2,Monthly,Credit Card,0,3.5,1
+CUST00490,33,2.5,6,887.0,3,13.4,Monthly,E-Wallet,1,1.9,1
+CUST00491,48,6.75,84,415.0,3,8.5,Monthly,Credit Card,1,2.8,0
+CUST00492,45,9.75,52,151.0,2,4.3,Monthly,Credit Card,1,3.4,0
+CUST00493,53,3.77,3,197.0,1,14.6,Annual,Credit Card,0,3.5,0
+CUST00494,26,9.09,81,444.0,1,8.8,Annual,Bank Transfer,1,3.7,0
+CUST00495,52,8.45,63,662.0,2,14.2,Annual,Bank Transfer,1,2.4,0
+CUST00496,41,10.35,49,565.0,3,13.6,Monthly,Bank Transfer,0,3.5,0
+CUST00497,36,8.88,76,533.0,2,12.3,Monthly,Credit Card,0,4.5,0
+CUST00498,41,5.39,47,686.0,1,9.9,Quarterly,Credit Card,0,1.0,0
+CUST00499,31,12.33,55,320.0,2,8.8,Annual,Credit Card,0,3.3,0
+CUST00500,55,7.99,64,453.0,3,6.3,Monthly,Credit Card,1,2.1,0
+CUST00501,39,8.41,65,356.0,2,8.9,Annual,Bank Transfer,0,3.6,0
+CUST00502,40,,81,401.0,3,14.8,Annual,Credit Card,0,2.2,1
+CUST00503,38,7.08,67,269.0,2,19.0,Annual,Bank Transfer,0,3.7,0
+CUST00504,34,5.67,90,388.0,1,18.3,Monthly,Credit Card,0,5.0,0
+CUST00505,35,7.95,15,445.0,0,12.7,Monthly,Credit Card,0,2.7,0
+CUST00506,51,13.98,32,383.0,4,19.0,Monthly,E-Wallet,0,2.8,1
+CUST00507,21,4.11,96,421.0,5,10.5,Quarterly,Bank Transfer,0,3.2,0
+CUST00508,23,3.34,68,523.0,3,5.5,Monthly,Bank Transfer,1,3.9,0
+CUST00509,36,13.21,18,673.0,0,21.6,Monthly,E-Wallet,1,2.7,0
+CUST00510,43,7.83,83,686.0,0,14.7,Annual,Bank Transfer,1,3.3,0
+CUST00511,31,6.36,43,,2,4.3,Monthly,E-Wallet,1,3.0,0
+CUST00512,32,11.83,35,223.0,3,19.8,Monthly,Bank Transfer,1,3.2,0
+CUST00513,30,6.56,78,,4,8.3,Quarterly,Credit Card,1,3.9,1
+CUST00514,52,14.34,58,401.0,3,9.4,Quarterly,Credit Card,1,4.1,0
+CUST00515,36,10.67,33,332.0,2,17.1,Annual,Bank Transfer,1,2.3,0
+CUST00516,28,6.94,14,,3,18.8,Monthly,Credit Card,0,3.9,0
+CUST00517,32,15.4,34,163.0,2,7.0,Quarterly,Credit Card,0,,0
+CUST00518,44,6.56,61,755.0,0,19.4,Quarterly,Credit Card,1,5.0,0
+CUST00519,48,10.87,4,665.0,1,16.4,Monthly,Credit Card,0,3.0,0
+CUST00520,28,9.46,88,536.0,5,8.0,Annual,Credit Card,0,3.7,0
+CUST00521,48,12.67,59,439.0,4,10.8,Monthly,Credit Card,0,3.6,0
+CUST00522,46,13.5,29,671.0,0,19.6,Monthly,Credit Card,0,4.0,0
+CUST00523,28,8.6,83,574.0,3,4.2,Monthly,Credit Card,1,3.2,1
+CUST00524,48,6.09,6,649.0,4,18.9,Monthly,Bank Transfer,0,3.4,0
+CUST00525,48,9.97,49,439.0,3,16.2,Monthly,Credit Card,0,2.9,0
+CUST00526,47,6.33,40,772.0,1,14.5,Annual,E-Wallet,0,4.6,0
+CUST00527,37,14.94,83,660.0,1,12.7,Monthly,E-Wallet,1,3.9,0
+CUST00528,29,8.94,65,542.0,1,21.9,Annual,Bank Transfer,0,3.9,0
+CUST00529,53,7.33,69,676.0,0,22.6,Quarterly,Bank Transfer,0,4.7,0
+CUST00530,40,9.09,27,375.0,3,8.9,Monthly,Credit Card,1,,0
+CUST00531,33,4.19,80,240.0,3,15.1,Monthly,Credit Card,0,4.5,0
+CUST00532,48,5.39,6,508.0,2,21.4,Quarterly,E-Wallet,0,4.7,0
+CUST00533,49,12.34,13,440.0,3,8.1,Quarterly,Credit Card,0,5.0,1
+CUST00534,33,6.4,64,414.0,1,13.2,Monthly,E-Wallet,1,2.7,1
+CUST00535,55,5.15,62,669.0,1,17.0,Monthly,Bank Transfer,0,3.3,0
+CUST00536,26,10.22,19,480.0,0,1.9,Annual,Credit Card,0,,0
+CUST00537,38,12.29,76,497.0,2,16.1,Monthly,Bank Transfer,0,2.8,1
+CUST00538,25,10.8,80,391.0,4,6.6,Annual,Bank Transfer,0,3.3,0
+CUST00539,45,11.69,43,609.0,1,13.0,Quarterly,Credit Card,0,3.8,0
+CUST00540,22,6.08,74,576.0,0,17.7,Monthly,Credit Card,0,3.4,0
+CUST00541,30,3.95,89,607.0,3,1.0,Monthly,Bank Transfer,0,3.7,0
+CUST00542,50,13.3,20,360.0,1,15.9,Monthly,Bank Transfer,0,2.6,1
+CUST00543,25,7.47,95,685.0,0,22.2,Annual,Credit Card,1,3.6,0
+CUST00544,53,7.7,68,781.0,0,9.3,Monthly,Credit Card,1,3.7,1
+CUST00545,21,12.75,44,602.0,2,14.9,Monthly,E-Wallet,0,5.0,0
+CUST00546,38,10.28,23,304.0,2,18.7,Quarterly,Bank Transfer,1,3.4,0
+CUST00547,52,9.96,2,306.0,7,4.0,Monthly,Bank Transfer,0,3.0,1
+CUST00548,31,15.43,22,382.0,3,15.8,Monthly,E-Wallet,1,4.2,0
+CUST00549,41,6.44,57,348.0,3,17.1,Annual,Credit Card,0,1.0,0
+CUST00550,46,11.47,72,437.0,4,15.2,Monthly,Bank Transfer,0,3.3,0
+CUST00551,45,8.68,7,564.0,2,12.4,Annual,E-Wallet,0,3.1,1
+CUST00552,42,9.36,78,502.0,1,7.0,Annual,E-Wallet,0,3.8,1
+CUST00553,47,13.39,56,486.0,1,19.0,Monthly,Credit Card,1,4.7,0
+CUST00554,33,10.13,67,407.0,1,12.2,Monthly,Credit Card,0,5.0,0
+CUST00555,53,10.22,16,437.0,1,7.5,Monthly,Bank Transfer,0,3.8,0
+CUST00556,54,11.93,83,593.0,2,10.4,Quarterly,Credit Card,0,2.2,0
+CUST00557,55,7.33,51,88.0,2,13.8,Monthly,E-Wallet,0,3.1,0
+CUST00558,21,5.81,82,448.0,0,4.2,Annual,Credit Card,0,3.2,0
+CUST00559,41,5.16,80,502.0,5,12.1,Quarterly,Credit Card,0,3.9,1
+CUST00560,26,2.5,72,591.0,2,9.9,Monthly,Credit Card,1,3.7,0
+CUST00561,48,15.08,12,268.0,1,18.7,Quarterly,Bank Transfer,1,3.0,0
+CUST00562,37,4.97,53,259.0,3,2.6,Monthly,E-Wallet,0,2.5,0
+CUST00563,25,7.79,75,555.0,0,16.7,Annual,Bank Transfer,0,2.8,0
+CUST00564,51,7.61,5,107.0,3,19.1,Quarterly,E-Wallet,1,2.8,0
+CUST00565,25,9.48,27,690.0,3,2.8,Monthly,Credit Card,0,5.0,1
+CUST00566,23,,12,491.0,5,3.4,Monthly,Credit Card,0,,0
+CUST00567,43,11.25,17,731.0,2,20.9,Annual,E-Wallet,1,3.7,0
+CUST00568,30,6.63,6,254.0,0,7.5,Quarterly,E-Wallet,0,4.5,0
+CUST00569,30,7.97,5,371.0,1,27.5,Annual,E-Wallet,0,3.8,0
+CUST00570,39,9.4,57,50.0,3,3.0,Monthly,E-Wallet,0,2.6,0
+CUST00571,37,7.7,28,307.0,4,12.9,Monthly,Credit Card,0,4.5,0
+CUST00572,41,13.64,78,417.0,4,11.9,Monthly,Credit Card,1,3.9,0
+CUST00573,34,10.07,69,97.0,3,11.0,Quarterly,E-Wallet,0,1.6,0
+CUST00574,29,10.85,59,379.0,1,14.3,Monthly,Credit Card,1,4.7,0
+CUST00575,21,10.62,33,92.0,0,14.6,Monthly,Credit Card,0,4.4,0
+CUST00576,33,12.26,62,404.0,1,11.2,Quarterly,Bank Transfer,0,3.9,0
+CUST00577,24,9.08,50,656.0,0,6.9,Quarterly,Credit Card,0,5.0,1
+CUST00578,21,4.35,19,444.0,2,17.2,Monthly,E-Wallet,0,4.4,0
+CUST00579,52,9.78,86,748.0,3,15.1,Monthly,Credit Card,0,4.6,0
+CUST00580,54,6.42,69,592.0,1,12.6,Quarterly,E-Wallet,0,4.5,0
+CUST00581,48,6.81,66,693.0,3,15.0,Monthly,Bank Transfer,1,4.3,1
+CUST00582,51,10.38,94,312.0,1,15.8,Monthly,Bank Transfer,1,2.0,0
+CUST00583,28,12.46,47,308.0,3,8.2,Monthly,Credit Card,0,2.1,1
+CUST00584,46,8.57,39,512.0,3,14.8,Quarterly,Credit Card,0,4.4,0
+CUST00585,54,9.49,68,166.0,4,9.2,Annual,Bank Transfer,1,4.7,1
+CUST00586,23,13.95,33,535.0,2,16.0,Monthly,Credit Card,0,3.0,0
+CUST00587,32,9.27,13,392.0,1,11.0,Monthly,Bank Transfer,0,2.6,0
+CUST00588,21,16.83,84,689.0,3,15.1,Annual,Credit Card,1,3.8,1
+CUST00589,25,10.31,54,572.0,1,9.8,Annual,Credit Card,0,2.3,0
+CUST00590,50,2.87,7,647.0,4,15.3,Quarterly,Credit Card,0,3.4,0
+CUST00591,50,10.91,79,314.0,1,7.1,Annual,Bank Transfer,0,3.3,0
+CUST00592,37,9.72,87,639.0,1,12.2,Quarterly,Credit Card,0,3.4,0
+CUST00593,43,12.63,14,710.0,3,16.9,Quarterly,E-Wallet,0,5.0,0
+CUST00594,35,10.65,87,443.0,0,14.3,Monthly,Bank Transfer,1,3.0,1
+CUST00595,41,8.06,19,,1,13.0,Monthly,E-Wallet,1,3.6,0
+CUST00596,34,4.58,54,320.0,3,21.0,Monthly,E-Wallet,0,2.4,0
+CUST00597,22,7.83,93,673.0,1,17.1,Annual,Credit Card,0,4.4,0
+CUST00598,31,5.78,20,933.0,1,16.3,Annual,E-Wallet,0,3.4,1
+CUST00599,54,6.64,29,273.0,4,15.3,Quarterly,Bank Transfer,1,4.7,0
+CUST00600,54,10.38,24,259.0,0,15.9,Monthly,E-Wallet,1,1.4,0
+CUST00601,38,13.84,82,616.0,2,20.3,Monthly,E-Wallet,1,3.5,0
+CUST00602,50,9.76,63,314.0,4,9.9,Monthly,Credit Card,0,3.7,0
+CUST00603,35,4.67,74,633.0,2,17.0,Monthly,Credit Card,1,4.4,0
+CUST00604,47,9.92,57,534.0,2,13.8,Quarterly,Bank Transfer,0,3.0,0
+CUST00605,54,12.33,8,446.0,2,10.1,Annual,Bank Transfer,0,4.3,0
+CUST00606,53,6.55,90,529.0,1,11.5,Monthly,Credit Card,0,3.1,0
+CUST00607,44,8.07,62,518.0,1,13.1,Monthly,Credit Card,0,3.7,0
+CUST00608,35,8.55,29,418.0,2,7.7,Quarterly,Credit Card,1,4.4,0
+CUST00609,50,5.99,74,134.0,2,16.3,Monthly,Bank Transfer,1,2.8,0
+CUST00610,37,10.57,17,482.0,2,11.5,Annual,E-Wallet,0,4.3,0
+CUST00611,25,8.11,66,733.0,0,12.4,Monthly,E-Wallet,0,3.9,0
+CUST00612,49,9.84,6,160.0,2,18.8,Monthly,Credit Card,0,3.3,0
+CUST00613,24,5.66,58,276.0,3,12.6,Monthly,Credit Card,0,3.0,0
+CUST00614,30,7.1,69,527.0,0,19.8,Monthly,Credit Card,0,1.7,0
+CUST00615,37,10.81,28,457.0,3,9.4,Quarterly,Credit Card,0,3.5,0
+CUST00616,30,7.31,62,524.0,2,6.5,Monthly,E-Wallet,0,3.3,0
+CUST00617,37,14.03,41,324.0,3,10.6,Monthly,Credit Card,1,4.2,0
+CUST00618,40,7.22,69,659.0,1,1.0,Monthly,Bank Transfer,1,4.1,0
+CUST00619,44,9.22,82,,3,16.5,Monthly,E-Wallet,1,4.6,0
+CUST00620,25,11.48,90,575.0,2,6.8,Monthly,E-Wallet,1,4.6,0
+CUST00621,54,3.96,84,508.0,2,8.9,Quarterly,Credit Card,0,5.0,0
+CUST00622,26,2.87,41,482.0,3,15.6,Quarterly,Credit Card,1,4.1,0
+CUST00623,22,3.62,49,563.0,1,12.6,Annual,Credit Card,0,2.8,1
+CUST00624,33,12.54,91,484.0,2,9.8,Monthly,Bank Transfer,1,4.3,0
+CUST00625,31,6.73,49,236.0,1,1.8,Monthly,E-Wallet,0,5.0,0
+CUST00626,43,16.69,76,646.0,0,18.5,Monthly,Credit Card,1,4.0,0
+CUST00627,36,6.69,71,597.0,0,15.6,Monthly,Credit Card,0,1.7,1
+CUST00628,51,9.09,3,71.0,1,22.3,Quarterly,E-Wallet,0,4.1,1
+CUST00629,31,13.43,10,332.0,3,9.0,Annual,Bank Transfer,0,3.0,0
+CUST00630,36,14.92,89,638.0,1,4.7,Quarterly,E-Wallet,0,2.4,0
+CUST00631,28,15.1,35,,2,17.0,Monthly,Credit Card,1,3.8,0
+CUST00632,24,12.37,80,620.0,0,11.1,Monthly,Credit Card,0,,0
+CUST00633,24,11.78,2,425.0,0,15.1,Annual,Credit Card,0,4.5,0
+CUST00634,45,10.4,24,691.0,0,20.1,Monthly,Credit Card,1,4.3,0
+CUST00635,23,10.99,74,450.0,2,13.9,Monthly,Bank Transfer,0,3.5,1
+CUST00636,52,6.74,38,320.0,4,12.8,Annual,Credit Card,0,3.1,0
+CUST00637,23,5.88,22,505.0,2,13.2,Quarterly,Credit Card,0,3.4,1
+CUST00638,47,8.49,26,445.0,3,3.8,Quarterly,E-Wallet,0,2.7,0
+CUST00639,49,7.96,43,304.0,0,17.5,Monthly,Credit Card,1,3.5,0
+CUST00640,52,,55,849.0,1,17.9,Monthly,Bank Transfer,1,1.0,0
+CUST00641,39,10.73,39,275.0,2,14.7,Monthly,Credit Card,1,3.7,0
+CUST00642,41,11.56,91,50.0,2,4.4,Quarterly,E-Wallet,0,3.7,0
+CUST00643,25,8.78,29,735.0,6,11.4,Monthly,Credit Card,0,4.4,0
+CUST00644,38,13.23,20,345.0,3,19.2,Annual,E-Wallet,0,3.9,1
+CUST00645,48,4.85,91,397.0,2,9.2,Annual,Credit Card,1,4.5,0
+CUST00646,42,7.88,41,386.0,2,17.9,Quarterly,Credit Card,0,4.1,0
+CUST00647,41,6.21,54,347.0,2,12.3,Monthly,Bank Transfer,0,4.5,0
+CUST00648,26,2.53,20,312.0,2,15.6,Monthly,Credit Card,0,5.0,0
+CUST00649,21,8.24,19,271.0,3,9.9,Annual,Credit Card,0,4.0,0
+CUST00650,25,8.11,84,462.0,1,12.4,Quarterly,E-Wallet,1,3.8,0
+CUST00651,32,13.34,66,378.0,1,14.2,Quarterly,E-Wallet,0,4.7,0
+CUST00652,46,10.52,30,581.0,1,6.6,Monthly,Credit Card,0,3.2,0
+CUST00653,54,5.22,53,537.0,2,13.4,Monthly,Credit Card,0,3.5,1
+CUST00654,34,14.43,34,283.0,0,1.0,Quarterly,Credit Card,1,4.0,0
+CUST00655,46,12.41,22,470.0,2,9.0,Monthly,Credit Card,0,3.7,0
+CUST00656,47,10.36,67,375.0,2,14.7,Quarterly,E-Wallet,0,3.7,0
+CUST00657,29,7.78,6,272.0,1,17.6,Annual,Bank Transfer,0,4.4,0
+CUST00658,46,5.43,79,574.0,4,14.4,Monthly,Bank Transfer,0,2.1,0
+CUST00659,42,7.31,27,428.0,1,5.0,Monthly,E-Wallet,1,5.0,0
+CUST00660,50,11.98,10,377.0,0,17.2,Quarterly,Bank Transfer,0,4.0,0
+CUST00661,37,14.53,73,296.0,2,6.3,Monthly,Bank Transfer,1,3.2,0
+CUST00662,46,13.44,96,265.0,2,15.1,Annual,Credit Card,0,5.0,0
+CUST00663,21,6.94,48,808.0,0,6.5,Quarterly,Credit Card,1,3.7,0
+CUST00664,28,4.92,70,510.0,2,8.1,Annual,Bank Transfer,1,3.7,0
+CUST00665,55,8.95,59,254.0,5,7.2,Quarterly,Credit Card,0,3.4,0
+CUST00666,35,2.84,59,502.0,1,12.7,Monthly,Credit Card,1,4.9,0
+CUST00667,42,9.53,2,641.0,0,11.0,Monthly,Credit Card,0,3.6,0
+CUST00668,34,8.03,29,480.0,3,14.5,Annual,Credit Card,0,3.1,0
+CUST00669,46,7.01,68,697.0,6,11.9,Monthly,Bank Transfer,0,4.5,0
+CUST00670,48,3.4,65,172.0,2,4.4,Quarterly,Bank Transfer,0,4.7,1
+CUST00671,43,10.14,83,92.0,1,13.4,Annual,Credit Card,1,5.0,0
+CUST00672,34,6.8,26,497.0,3,3.2,Monthly,Credit Card,0,4.2,0
+CUST00673,44,4.76,89,500.0,2,7.6,Monthly,Bank Transfer,1,4.6,0
+CUST00674,22,2.5,10,50.0,1,10.2,Quarterly,Credit Card,0,3.4,0
+CUST00675,46,8.41,53,338.0,2,9.8,Annual,Bank Transfer,0,4.5,0
+CUST00676,34,14.17,79,268.0,3,3.8,Monthly,E-Wallet,1,4.3,0
+CUST00677,27,13.82,59,199.0,2,18.9,Annual,Credit Card,1,4.1,0
+CUST00678,23,7.04,22,268.0,3,20.2,Quarterly,E-Wallet,0,2.2,1
+CUST00679,43,6.57,51,557.0,2,23.3,Annual,E-Wallet,1,3.3,0
+CUST00680,38,10.0,48,267.0,0,17.7,Monthly,Credit Card,1,3.6,0
+CUST00681,55,5.31,21,273.0,4,10.0,Monthly,Credit Card,0,4.1,0
+CUST00682,35,9.47,22,159.0,2,9.9,Annual,E-Wallet,0,5.0,0
+CUST00683,45,10.95,30,678.0,1,9.7,Annual,Credit Card,0,4.4,1
+CUST00684,48,12.43,25,528.0,2,21.9,Monthly,E-Wallet,0,2.9,0
+CUST00685,30,8.18,28,,0,11.4,Quarterly,Bank Transfer,0,3.2,0
+CUST00686,37,7.85,65,273.0,1,18.3,Annual,Credit Card,0,4.9,0
+CUST00687,42,5.69,45,545.0,2,18.0,Monthly,Credit Card,0,3.1,0
+CUST00688,46,5.85,68,681.0,1,12.9,Quarterly,Bank Transfer,1,4.5,0
+CUST00689,45,7.78,7,601.0,1,4.7,Annual,Credit Card,1,3.7,1
+CUST00690,37,9.68,49,386.0,1,11.5,Monthly,Bank Transfer,0,3.5,0
+CUST00691,33,11.42,9,102.0,0,12.7,Monthly,E-Wallet,0,3.1,0
+CUST00692,40,,36,607.0,0,18.4,Annual,E-Wallet,0,1.0,1
+CUST00693,45,13.28,83,397.0,2,12.1,Monthly,Credit Card,0,4.1,0
+CUST00694,24,7.63,1,462.0,1,6.0,Monthly,E-Wallet,0,2.7,0
+CUST00695,30,8.43,10,418.0,3,16.9,Annual,E-Wallet,0,2.3,0
+CUST00696,23,6.11,36,206.0,3,10.9,Quarterly,E-Wallet,0,3.8,0
+CUST00697,38,2.5,73,516.0,0,1.0,Annual,Credit Card,1,4.5,1
+CUST00698,42,11.33,46,491.0,0,13.6,Annual,E-Wallet,1,2.1,0
+CUST00699,54,10.86,32,373.0,3,14.5,Monthly,Bank Transfer,1,4.5,0
+CUST00700,28,7.6,32,535.0,4,7.8,Monthly,Credit Card,1,2.8,0
+CUST00701,39,8.71,6,203.0,2,11.0,Monthly,E-Wallet,0,4.2,0
+CUST00702,26,10.15,48,402.0,1,15.3,Monthly,Credit Card,0,4.1,0
+CUST00703,46,3.5,38,455.0,0,13.7,Quarterly,Credit Card,1,3.4,0
+CUST00704,54,6.81,17,138.0,4,4.2,Quarterly,E-Wallet,1,3.6,1
+CUST00705,26,11.04,74,440.0,1,18.3,Monthly,Credit Card,0,,0
+CUST00706,53,4.49,27,582.0,2,20.5,Monthly,E-Wallet,0,3.8,0
+CUST00707,42,9.44,54,395.0,4,9.4,Monthly,Bank Transfer,0,3.8,0
+CUST00708,41,4.16,50,444.0,3,2.5,Quarterly,Credit Card,0,2.8,0
+CUST00709,26,9.99,35,551.0,1,15.9,Monthly,Credit Card,0,2.4,0
+CUST00710,26,8.39,85,,0,8.6,Monthly,E-Wallet,0,4.5,0
+CUST00711,24,3.33,25,396.0,1,14.7,Quarterly,Bank Transfer,0,3.8,0
+CUST00712,50,12.23,28,238.0,2,23.0,Monthly,E-Wallet,0,4.4,0
+CUST00713,31,6.15,15,447.0,2,4.3,Monthly,E-Wallet,0,3.0,0
+CUST00714,50,5.91,4,390.0,0,8.0,Quarterly,Credit Card,1,2.9,0
+CUST00715,51,9.14,93,540.0,0,11.0,Monthly,Credit Card,0,2.7,0
+CUST00716,44,12.18,73,551.0,2,18.5,Quarterly,E-Wallet,0,3.4,1
+CUST00717,29,5.25,27,592.0,3,29.8,Monthly,Bank Transfer,0,3.8,0
+CUST00718,23,8.7,26,359.0,1,13.2,Monthly,Credit Card,1,3.1,1
+CUST00719,51,9.87,19,58.0,3,3.8,Monthly,E-Wallet,0,5.0,0
+CUST00720,44,10.72,92,583.0,1,10.3,Annual,E-Wallet,0,3.0,1
+CUST00721,51,9.06,17,528.0,1,8.1,Quarterly,Bank Transfer,0,3.8,0
+CUST00722,26,7.33,43,336.0,7,15.6,Annual,Credit Card,0,2.8,0
+CUST00723,22,5.85,41,550.0,0,13.9,Quarterly,Bank Transfer,0,3.0,1
+CUST00724,40,8.78,42,189.0,0,6.8,Quarterly,Bank Transfer,0,3.5,0
+CUST00725,48,5.07,50,635.0,3,7.8,Monthly,E-Wallet,1,2.9,0
+CUST00726,31,2.5,84,390.0,1,10.2,Monthly,E-Wallet,1,3.7,0
+CUST00727,24,9.9,40,301.0,1,10.8,Monthly,Bank Transfer,1,4.0,0
+CUST00728,35,11.39,39,338.0,3,11.8,Monthly,E-Wallet,0,4.6,0
+CUST00729,26,2.5,23,408.0,1,12.2,Monthly,E-Wallet,1,2.6,0
+CUST00730,50,5.27,96,448.0,1,18.2,Monthly,Credit Card,0,3.8,0
+CUST00731,22,10.48,52,459.0,4,10.0,Monthly,Credit Card,0,3.5,0
+CUST00732,35,15.08,47,373.0,1,9.3,Monthly,E-Wallet,1,1.9,1
+CUST00733,31,8.57,63,486.0,2,5.3,Monthly,Credit Card,0,2.6,0
+CUST00734,28,6.17,69,451.0,2,10.9,Quarterly,Credit Card,0,4.0,0
+CUST00735,46,7.91,43,333.0,2,13.3,Annual,Credit Card,0,2.4,0
+CUST00736,25,12.9,48,306.0,2,3.4,Monthly,Credit Card,0,3.5,1
+CUST00737,26,6.43,34,560.0,1,10.3,Monthly,Credit Card,1,1.7,0
+CUST00738,46,5.94,40,544.0,2,17.8,Monthly,Credit Card,0,3.5,1
+CUST00739,24,6.96,75,460.0,1,15.2,Annual,E-Wallet,0,1.8,0
+CUST00740,39,5.45,61,616.0,1,13.9,Monthly,Bank Transfer,0,3.1,0
+CUST00741,40,8.89,50,97.0,0,15.1,Quarterly,Bank Transfer,1,3.2,0
+CUST00742,53,13.7,67,348.0,1,9.1,Monthly,Credit Card,0,3.7,0
+CUST00743,40,9.53,62,242.0,2,8.5,Monthly,Bank Transfer,0,3.4,0
+CUST00744,32,7.69,58,856.0,3,18.4,Monthly,Bank Transfer,1,2.5,0
+CUST00745,21,7.57,33,578.0,0,16.1,Monthly,Bank Transfer,0,2.5,0
+CUST00746,46,3.5,75,436.0,2,8.3,Annual,Credit Card,0,2.1,0
+CUST00747,34,11.33,16,591.0,0,2.6,Monthly,Credit Card,1,3.8,0
+CUST00748,31,8.25,82,651.0,2,8.4,Quarterly,E-Wallet,0,3.7,0
+CUST00749,33,7.92,94,649.0,4,14.7,Quarterly,Bank Transfer,1,4.2,0
+CUST00750,23,18.72,48,616.0,2,8.7,Quarterly,Bank Transfer,0,3.1,0
+CUST00751,53,9.46,10,403.0,1,13.7,Monthly,Bank Transfer,1,,1
+CUST00752,26,6.09,82,360.0,1,19.1,Monthly,Credit Card,1,3.3,1
+CUST00753,30,7.14,38,277.0,3,11.5,Monthly,E-Wallet,0,3.6,0
+CUST00754,25,12.18,19,540.0,2,13.2,Monthly,Credit Card,0,2.6,0
+CUST00755,43,8.86,36,421.0,1,15.4,Quarterly,Bank Transfer,1,2.6,0
+CUST00756,30,3.9,59,375.0,3,6.6,Monthly,E-Wallet,0,4.0,0
+CUST00757,22,11.44,63,365.0,2,8.1,Quarterly,E-Wallet,0,3.7,0
+CUST00758,33,6.36,77,711.0,1,15.6,Monthly,Credit Card,0,4.6,0
+CUST00759,22,14.49,46,621.0,2,12.2,Annual,Credit Card,1,5.0,0
+CUST00760,40,11.96,3,779.0,1,12.6,Monthly,Bank Transfer,1,2.2,1
+CUST00761,21,7.07,74,545.0,2,12.2,Monthly,E-Wallet,0,3.2,0
+CUST00762,29,,65,460.0,0,16.9,Annual,Bank Transfer,0,3.7,0
+CUST00763,37,,91,445.0,3,14.2,Monthly,Bank Transfer,1,3.9,0
+CUST00764,29,11.23,8,266.0,3,14.2,Annual,Credit Card,1,4.5,0
+CUST00765,31,10.05,51,223.0,1,18.1,Monthly,Bank Transfer,0,4.3,0
+CUST00766,35,5.79,81,541.0,1,20.0,Monthly,Bank Transfer,1,4.6,0
+CUST00767,44,6.44,73,282.0,0,23.2,Quarterly,E-Wallet,1,3.7,1
+CUST00768,55,11.8,6,488.0,2,9.1,Annual,Credit Card,0,3.0,0
+CUST00769,50,7.43,89,651.0,0,24.3,Monthly,E-Wallet,1,5.0,1
+CUST00770,51,7.21,39,330.0,3,6.5,Annual,Credit Card,0,3.7,0
+CUST00771,25,5.44,60,812.0,0,21.7,Quarterly,Bank Transfer,0,3.4,0
+CUST00772,34,9.86,28,272.0,1,8.8,Annual,E-Wallet,0,2.6,1
+CUST00773,31,15.1,54,628.0,2,11.7,Monthly,Credit Card,1,3.7,0
+CUST00774,29,5.08,37,526.0,4,12.1,Monthly,Credit Card,1,4.5,0
+CUST00775,54,8.58,9,665.0,1,7.7,Annual,E-Wallet,0,3.1,1
+CUST00776,32,13.02,82,249.0,4,12.4,Annual,Bank Transfer,0,3.5,0
+CUST00777,55,8.25,56,865.0,0,7.9,Monthly,Credit Card,0,3.8,0
+CUST00778,55,9.95,59,418.0,1,5.8,Monthly,Credit Card,1,4.0,1
+CUST00779,21,5.1,85,572.0,2,11.8,Monthly,Bank Transfer,1,3.4,0
+CUST00780,42,9.87,2,710.0,0,19.9,Quarterly,E-Wallet,0,3.2,0
+CUST00781,49,7.9,61,341.0,1,10.7,Monthly,Credit Card,0,3.1,0
+CUST00782,28,11.65,58,,4,16.7,Monthly,E-Wallet,0,2.6,0
+CUST00783,31,12.3,60,311.0,1,7.8,Monthly,Credit Card,0,2.9,0
+CUST00784,34,16.79,40,701.0,1,5.6,Quarterly,Credit Card,0,2.9,0
+CUST00785,50,10.35,36,313.0,4,14.3,Monthly,Credit Card,1,2.2,0
+CUST00786,55,9.54,37,457.0,0,20.8,Monthly,E-Wallet,0,4.5,0
+CUST00787,41,9.12,79,505.0,3,13.0,Quarterly,Credit Card,1,3.9,1
+CUST00788,25,7.37,92,591.0,3,16.1,Quarterly,E-Wallet,0,3.7,0
+CUST00789,39,9.58,18,804.0,0,19.5,Monthly,Bank Transfer,0,4.8,0
+CUST00790,34,7.55,63,369.0,4,11.8,Monthly,E-Wallet,0,4.2,0
+CUST00791,46,9.04,22,655.0,2,11.2,Quarterly,E-Wallet,0,2.9,0
+CUST00792,24,12.72,11,805.0,2,14.4,Annual,Bank Transfer,0,4.7,1
+CUST00793,45,5.28,58,480.0,1,15.3,Quarterly,E-Wallet,1,4.5,0
+CUST00794,45,12.15,57,351.0,2,5.0,Annual,Bank Transfer,0,2.6,0
+CUST00795,38,12.71,77,139.0,0,13.5,Quarterly,E-Wallet,1,4.4,0
+CUST00796,28,8.12,4,789.0,3,12.0,Annual,Credit Card,0,3.2,1
+CUST00797,34,2.5,86,406.0,1,8.1,Monthly,Credit Card,0,4.5,0
+CUST00798,52,6.55,7,270.0,3,11.7,Monthly,Bank Transfer,0,3.3,1
+CUST00799,53,12.65,61,206.0,2,6.2,Monthly,Credit Card,1,3.1,0
+CUST00800,43,8.43,54,269.0,0,4.4,Monthly,Credit Card,0,3.2,0
+CUST00801,35,5.3,88,616.0,3,12.3,Quarterly,Bank Transfer,0,2.7,0
+CUST00802,53,6.88,68,640.0,2,16.5,Monthly,Credit Card,1,2.3,0
+CUST00803,45,11.19,92,567.0,1,10.3,Quarterly,Bank Transfer,0,1.4,1
+CUST00804,37,10.25,79,474.0,2,7.2,Monthly,Credit Card,1,2.7,0
+CUST00805,53,7.74,1,226.0,0,8.0,Monthly,E-Wallet,0,5.0,0
+CUST00806,22,7.33,55,319.0,2,14.7,Annual,E-Wallet,0,4.0,1
+CUST00807,34,7.25,3,251.0,4,20.3,Monthly,E-Wallet,0,5.0,0
+CUST00808,26,5.55,78,553.0,1,15.9,Monthly,Credit Card,1,3.3,0
+CUST00809,26,13.67,38,259.0,2,18.5,Monthly,Bank Transfer,0,3.2,0
+CUST00810,23,7.47,1,321.0,1,6.8,Annual,E-Wallet,0,5.0,1
+CUST00811,27,,38,417.0,2,11.6,Monthly,E-Wallet,0,3.9,0
+CUST00812,28,13.37,85,149.0,2,17.1,Quarterly,E-Wallet,0,2.7,0
+CUST00813,35,11.69,29,458.0,3,5.0,Monthly,Credit Card,1,4.2,0
+CUST00814,49,7.12,5,431.0,2,8.7,Quarterly,Bank Transfer,0,4.7,0
+CUST00815,53,9.79,74,663.0,0,16.7,Monthly,E-Wallet,0,2.3,0
+CUST00816,50,8.42,92,302.0,0,13.3,Quarterly,Credit Card,0,4.0,0
+CUST00817,47,,21,216.0,0,7.2,Annual,Bank Transfer,0,,0
+CUST00818,49,9.54,71,383.0,3,3.8,Quarterly,E-Wallet,0,4.7,0
+CUST00819,53,4.73,67,252.0,3,18.7,Quarterly,Bank Transfer,0,3.8,0
+CUST00820,47,12.3,47,457.0,2,1.7,Monthly,Bank Transfer,1,4.2,1
+CUST00821,53,7.01,84,115.0,0,15.2,Quarterly,Bank Transfer,1,3.4,0
+CUST00822,24,9.14,83,341.0,3,9.3,Monthly,E-Wallet,0,2.0,0
+CUST00823,42,9.41,35,,0,17.2,Quarterly,Bank Transfer,1,3.2,0
+CUST00824,22,7.67,68,552.0,1,6.8,Monthly,E-Wallet,0,4.4,0
+CUST00825,30,10.38,69,304.0,3,25.1,Monthly,Bank Transfer,0,5.0,0
+CUST00826,25,6.98,1,138.0,3,14.0,Monthly,Bank Transfer,0,3.9,0
+CUST00827,30,11.29,68,414.0,2,14.8,Monthly,Bank Transfer,0,3.0,1
+CUST00828,53,4.19,12,508.0,1,8.1,Monthly,Credit Card,0,4.1,0
+CUST00829,33,8.9,60,401.0,4,11.3,Quarterly,Bank Transfer,1,4.4,0
+CUST00830,51,14.7,27,340.0,6,11.5,Monthly,Bank Transfer,1,3.7,0
+CUST00831,44,5.3,56,329.0,2,21.0,Monthly,Credit Card,0,3.7,1
+CUST00832,35,6.33,23,470.0,0,14.0,Quarterly,Credit Card,0,3.8,0
+CUST00833,49,10.14,25,290.0,3,14.7,Monthly,Credit Card,1,3.6,0
+CUST00834,28,9.07,21,391.0,0,14.7,Quarterly,E-Wallet,0,3.9,0
+CUST00835,25,9.62,61,585.0,0,15.1,Quarterly,Credit Card,1,5.0,0
+CUST00836,49,10.07,63,216.0,0,5.1,Annual,Credit Card,0,1.8,1
+CUST00837,24,10.53,52,442.0,0,22.2,Quarterly,Credit Card,0,3.4,0
+CUST00838,32,12.05,88,128.0,4,7.6,Monthly,Bank Transfer,0,2.8,1
+CUST00839,22,9.81,25,491.0,0,11.8,Monthly,Credit Card,1,4.7,0
+CUST00840,47,7.73,55,274.0,0,19.7,Monthly,Bank Transfer,1,3.5,0
+CUST00841,51,10.65,46,,6,21.7,Annual,Credit Card,0,4.1,0
+CUST00842,46,14.58,32,184.0,3,16.0,Monthly,E-Wallet,1,4.9,0
+CUST00843,47,8.08,55,530.0,4,9.5,Monthly,E-Wallet,0,2.6,0
+CUST00844,25,5.38,96,670.0,3,12.6,Monthly,E-Wallet,0,3.1,1
+CUST00845,40,12.04,5,264.0,2,12.8,Annual,Credit Card,1,4.8,0
+CUST00846,31,8.11,36,295.0,2,13.0,Monthly,Bank Transfer,0,2.6,0
+CUST00847,30,2.5,49,280.0,1,5.8,Annual,Bank Transfer,0,3.2,0
+CUST00848,26,11.21,58,363.0,2,18.3,Monthly,Credit Card,0,2.2,1
+CUST00849,28,6.79,39,543.0,0,12.7,Monthly,Credit Card,1,4.8,0
+CUST00850,43,8.21,80,348.0,3,8.4,Monthly,Credit Card,1,3.1,0
+CUST00851,46,9.56,85,248.0,2,9.5,Annual,E-Wallet,1,3.9,0
+CUST00852,32,9.11,61,87.0,2,13.3,Annual,Credit Card,0,4.2,0
+CUST00853,46,10.77,9,738.0,3,5.0,Monthly,Bank Transfer,1,2.9,0
+CUST00854,33,7.11,6,752.0,0,16.4,Monthly,Bank Transfer,0,1.9,0
+CUST00855,38,10.14,35,551.0,2,13.2,Quarterly,Bank Transfer,1,3.4,0
+CUST00856,45,7.67,39,304.0,0,19.8,Monthly,E-Wallet,0,3.4,0
+CUST00857,53,10.86,22,585.0,0,12.4,Monthly,Bank Transfer,0,3.5,0
+CUST00858,32,10.47,41,,3,6.6,Monthly,Bank Transfer,0,3.6,0
+CUST00859,24,5.51,5,404.0,1,6.0,Monthly,Bank Transfer,1,3.2,0
+CUST00860,25,11.98,42,,2,10.0,Monthly,Credit Card,1,3.1,0
+CUST00861,28,6.78,87,672.0,1,10.6,Monthly,Credit Card,0,3.9,0
+CUST00862,48,11.09,81,155.0,0,9.2,Monthly,E-Wallet,0,2.9,0
+CUST00863,51,9.68,76,630.0,4,12.6,Annual,E-Wallet,1,3.5,0
+CUST00864,29,14.38,87,394.0,0,9.0,Monthly,Bank Transfer,0,3.1,0
+CUST00865,49,7.78,80,250.0,0,13.3,Quarterly,Credit Card,1,3.9,0
+CUST00866,34,,67,265.0,1,9.4,Monthly,Credit Card,1,4.6,0
+CUST00867,42,8.44,30,294.0,1,15.2,Quarterly,Credit Card,0,4.6,0
+CUST00868,31,7.53,57,232.0,2,10.4,Monthly,E-Wallet,0,4.8,0
+CUST00869,43,,86,769.0,2,18.2,Quarterly,Bank Transfer,0,3.3,0
+CUST00870,21,3.33,73,538.0,1,15.3,Monthly,E-Wallet,0,3.4,0
+CUST00871,41,5.13,29,642.0,0,13.0,Annual,Bank Transfer,0,2.5,1
+CUST00872,46,5.08,37,551.0,2,11.0,Monthly,Credit Card,1,3.3,0
+CUST00873,43,11.54,87,461.0,2,4.4,Monthly,Credit Card,0,3.3,1
+CUST00874,21,13.97,13,463.0,1,19.1,Annual,Credit Card,0,3.0,0
+CUST00875,35,8.17,32,378.0,1,8.6,Quarterly,Bank Transfer,0,3.0,0
+CUST00876,41,7.96,46,393.0,1,12.5,Monthly,Credit Card,1,2.1,1
+CUST00877,29,8.72,23,197.0,4,13.7,Annual,Bank Transfer,1,2.4,0
+CUST00878,29,12.22,45,645.0,2,11.1,Monthly,Bank Transfer,0,3.6,0
+CUST00879,30,5.53,17,124.0,1,18.8,Monthly,Credit Card,1,3.7,1
+CUST00880,46,9.26,85,259.0,2,5.9,Annual,Credit Card,1,4.0,0
+CUST00881,55,11.62,66,812.0,1,20.7,Monthly,Credit Card,0,3.4,0
+CUST00882,45,10.1,6,475.0,3,15.4,Annual,Bank Transfer,0,3.6,0
+CUST00883,46,9.11,18,482.0,0,10.8,Monthly,Credit Card,0,4.7,1
+CUST00884,31,11.7,94,565.0,2,10.8,Quarterly,Credit Card,1,3.6,0
+CUST00885,22,2.5,22,173.0,0,1.0,Quarterly,E-Wallet,0,3.0,0
+CUST00886,27,10.67,33,199.0,2,7.8,Annual,Bank Transfer,1,2.5,0
+CUST00887,38,6.41,30,370.0,2,10.2,Quarterly,Bank Transfer,1,4.3,0
+CUST00888,47,2.64,81,287.0,0,12.9,Monthly,Bank Transfer,0,2.1,0
+CUST00889,54,10.14,32,437.0,0,18.3,Quarterly,E-Wallet,0,2.8,0
+CUST00890,47,12.9,42,537.0,1,22.2,Monthly,Bank Transfer,0,4.0,0
+CUST00891,37,8.06,78,700.0,1,13.4,Annual,Credit Card,0,1.9,0
+CUST00892,44,11.55,10,596.0,3,13.0,Annual,Credit Card,1,3.0,0
+CUST00893,45,13.66,36,271.0,0,9.5,Monthly,E-Wallet,1,3.7,1
+CUST00894,27,12.71,34,383.0,2,3.4,Annual,Bank Transfer,0,3.3,1
+CUST00895,26,13.75,73,334.0,1,9.0,Monthly,Bank Transfer,1,2.7,0
+CUST00896,44,10.87,28,267.0,3,11.0,Monthly,E-Wallet,0,3.1,0
+CUST00897,53,8.74,11,226.0,2,16.9,Monthly,E-Wallet,0,4.3,0
+CUST00898,49,3.37,78,750.0,1,14.6,Quarterly,Credit Card,0,5.0,0
+CUST00899,42,7.71,39,452.0,4,13.1,Monthly,Credit Card,0,3.7,0
+CUST00900,46,5.8,47,410.0,0,9.1,Annual,Credit Card,1,1.8,0
+CUST00901,48,15.45,19,537.0,6,2.1,Monthly,E-Wallet,1,4.1,0
+CUST00902,41,7.94,15,546.0,1,2.4,Quarterly,Credit Card,0,3.2,0
+CUST00903,27,8.89,28,651.0,1,3.7,Monthly,Credit Card,0,2.6,0
+CUST00904,37,10.26,24,316.0,3,10.5,Annual,Credit Card,0,2.9,0
+CUST00905,40,8.64,72,522.0,0,17.0,Monthly,Credit Card,0,2.9,0
+CUST00906,40,13.92,9,286.0,3,16.8,Monthly,Credit Card,1,2.3,0
+CUST00907,42,6.51,47,416.0,3,16.0,Monthly,Credit Card,1,3.5,0
+CUST00908,48,9.12,33,460.0,6,9.4,Quarterly,Bank Transfer,1,5.0,0
+CUST00909,27,6.12,62,,1,17.7,Monthly,Credit Card,0,2.6,0
+CUST00910,21,4.28,19,470.0,0,7.3,Quarterly,Credit Card,0,5.0,0
+CUST00911,52,6.54,67,594.0,3,16.3,Monthly,E-Wallet,0,3.8,0
+CUST00912,33,8.38,74,343.0,1,3.6,Annual,E-Wallet,0,3.5,0
+CUST00913,50,7.13,40,483.0,0,6.1,Monthly,Credit Card,0,3.3,0
+CUST00914,43,6.28,47,313.0,0,20.3,Monthly,Credit Card,0,2.9,1
+CUST00915,39,4.0,65,976.0,1,11.0,Monthly,Bank Transfer,0,3.9,0
+CUST00916,52,8.23,29,286.0,2,8.6,Monthly,Credit Card,0,4.1,0
+CUST00917,50,3.68,50,324.0,6,17.5,Monthly,Credit Card,1,1.4,0
+CUST00918,49,10.93,13,609.0,1,18.1,Annual,Credit Card,0,5.0,0
+CUST00919,49,8.76,1,,4,9.8,Annual,Credit Card,1,2.0,0
+CUST00920,50,3.84,34,609.0,2,13.4,Quarterly,Bank Transfer,0,3.1,0
+CUST00921,36,7.51,93,478.0,2,12.7,Monthly,E-Wallet,0,1.3,0
+CUST00922,39,6.09,48,377.0,2,1.0,Monthly,E-Wallet,1,3.4,0
+CUST00923,38,9.52,77,315.0,1,5.0,Quarterly,Bank Transfer,0,3.2,1
+CUST00924,21,12.79,48,308.0,4,16.7,Monthly,Credit Card,1,3.1,0
+CUST00925,34,2.5,49,379.0,3,7.8,Annual,Bank Transfer,0,3.9,0
+CUST00926,22,8.87,64,419.0,6,14.6,Monthly,Credit Card,0,3.4,0
+CUST00927,48,7.99,61,300.0,2,13.3,Annual,Credit Card,0,4.1,0
+CUST00928,50,10.65,29,430.0,2,18.1,Monthly,Bank Transfer,1,2.5,0
+CUST00929,24,9.18,39,253.0,2,5.2,Annual,E-Wallet,1,3.7,0
+CUST00930,21,6.09,88,586.0,1,14.0,Monthly,Credit Card,1,3.0,0
+CUST00931,28,7.48,26,621.0,3,11.7,Annual,E-Wallet,1,3.3,0
+CUST00932,49,5.95,17,323.0,3,8.1,Monthly,Credit Card,0,3.8,0
+CUST00933,23,11.94,71,313.0,2,8.0,Quarterly,Credit Card,0,3.1,0
+CUST00934,52,8.57,13,482.0,0,13.1,Annual,Credit Card,0,3.5,0
+CUST00935,30,14.58,69,678.0,3,15.1,Monthly,Bank Transfer,0,2.6,0
+CUST00936,30,8.31,26,718.0,2,12.3,Monthly,E-Wallet,1,4.6,0
+CUST00937,39,6.23,49,198.0,1,12.5,Monthly,Bank Transfer,0,4.3,0
+CUST00938,54,3.66,67,631.0,1,9.5,Monthly,Credit Card,0,3.7,0
+CUST00939,53,2.73,7,439.0,2,9.8,Monthly,Credit Card,0,3.4,0
+CUST00940,43,3.43,58,,1,8.0,Monthly,Bank Transfer,1,3.5,1
+CUST00941,48,9.35,49,541.0,3,9.4,Monthly,Credit Card,1,4.6,0
+CUST00942,52,10.13,53,363.0,3,15.0,Quarterly,Credit Card,0,4.2,1
+CUST00943,27,3.44,65,647.0,1,15.5,Quarterly,E-Wallet,0,4.6,0
+CUST00944,49,11.36,62,706.0,4,5.6,Monthly,Bank Transfer,0,3.3,0
+CUST00945,28,6.95,17,713.0,4,7.5,Annual,Credit Card,0,4.0,0
+CUST00946,21,8.97,43,118.0,2,8.4,Annual,Credit Card,1,4.7,0
+CUST00947,23,13.66,25,409.0,2,11.7,Monthly,Credit Card,0,2.8,0
+CUST00948,44,11.37,3,102.0,5,3.6,Monthly,Bank Transfer,0,2.7,1
+CUST00949,43,7.64,79,312.0,2,7.6,Monthly,E-Wallet,0,3.8,1
+CUST00950,28,5.65,29,50.0,4,5.1,Quarterly,Bank Transfer,0,2.5,0
+CUST00951,23,2.5,32,531.0,4,14.0,Quarterly,Credit Card,1,2.0,0
+CUST00952,53,6.2,26,489.0,3,11.9,Monthly,Credit Card,0,4.7,0
+CUST00953,48,7.82,16,372.0,1,9.7,Quarterly,E-Wallet,0,4.8,0
+CUST00954,28,5.34,25,308.0,3,6.7,Monthly,E-Wallet,1,2.5,1
+CUST00955,54,8.08,54,507.0,0,9.8,Monthly,Bank Transfer,0,2.3,0
+CUST00956,55,8.75,28,268.0,3,9.2,Quarterly,Credit Card,1,3.0,0
+CUST00957,52,7.78,73,256.0,0,20.2,Quarterly,Bank Transfer,0,4.7,0
+CUST00958,44,6.42,56,234.0,1,17.0,Monthly,E-Wallet,0,3.2,0
+CUST00959,34,9.04,65,413.0,1,8.5,Quarterly,Bank Transfer,0,3.7,0
+CUST00960,52,9.91,93,345.0,5,12.8,Annual,Bank Transfer,0,3.9,0
+CUST00961,36,5.01,86,381.0,0,16.7,Quarterly,Credit Card,0,3.8,0
+CUST00962,24,13.01,80,544.0,3,8.5,Quarterly,Credit Card,0,4.9,1
+CUST00963,41,8.18,41,,1,4.9,Monthly,Credit Card,0,3.0,0
+CUST00964,34,8.56,51,711.0,2,3.0,Monthly,E-Wallet,0,3.5,0
+CUST00965,51,10.77,71,461.0,3,18.4,Monthly,Bank Transfer,0,3.8,0
+CUST00966,38,9.25,78,513.0,4,11.0,Quarterly,E-Wallet,1,3.6,0
+CUST00967,27,11.55,29,484.0,0,13.5,Annual,Credit Card,0,2.5,0
+CUST00968,30,9.42,83,149.0,1,9.1,Monthly,E-Wallet,0,2.3,1
+CUST00969,27,6.54,19,383.0,3,5.7,Monthly,E-Wallet,1,2.3,0
+CUST00970,53,9.66,66,384.0,2,6.6,Monthly,Credit Card,0,4.3,0
+CUST00971,43,4.84,41,358.0,4,5.3,Monthly,E-Wallet,0,2.9,0
+CUST00972,41,8.85,45,443.0,3,16.2,Annual,Credit Card,0,4.0,1
+CUST00973,39,8.39,15,410.0,2,19.5,Quarterly,Credit Card,0,,1
+CUST00974,39,7.83,3,272.0,2,12.2,Monthly,Credit Card,0,2.7,1
+CUST00975,49,8.09,11,423.0,3,4.4,Quarterly,E-Wallet,1,2.7,0
+CUST00976,38,2.5,53,335.0,1,14.5,Quarterly,E-Wallet,1,3.7,0
+CUST00977,22,6.74,46,50.0,4,18.3,Quarterly,Credit Card,1,3.7,0
+CUST00978,21,8.8,30,199.0,2,16.9,Monthly,Bank Transfer,0,4.0,0
+CUST00979,25,9.01,57,466.0,3,11.9,Monthly,Bank Transfer,0,3.2,1
+CUST00980,40,5.21,18,647.0,1,10.8,Monthly,E-Wallet,1,2.8,0
+CUST00981,31,12.55,51,50.0,0,11.8,Annual,Credit Card,0,3.7,0
+CUST00982,22,5.73,48,293.0,3,18.1,Quarterly,Bank Transfer,0,4.9,0
+CUST00983,23,11.6,66,528.0,0,15.8,Monthly,Bank Transfer,0,1.9,0
+CUST00984,43,9.87,96,608.0,1,10.1,Monthly,Credit Card,0,2.9,0
+CUST00985,32,6.43,8,374.0,0,9.9,Monthly,Credit Card,0,4.1,0
+CUST00986,40,14.18,22,327.0,1,9.6,Monthly,Bank Transfer,0,3.8,0
+CUST00987,25,4.68,6,670.0,1,6.7,Annual,Credit Card,1,4.1,0
+CUST00988,50,11.44,76,593.0,0,18.8,Monthly,E-Wallet,0,3.2,1
+CUST00989,29,11.7,57,605.0,0,8.1,Monthly,Credit Card,0,2.1,0
+CUST00990,54,6.35,36,366.0,1,14.5,Annual,E-Wallet,1,5.0,0
+CUST00991,55,12.96,79,650.0,1,8.7,Quarterly,Credit Card,0,4.6,0
+CUST00992,42,7.7,92,100.0,1,9.6,Annual,Credit Card,0,3.6,0
+CUST00993,44,9.42,57,654.0,0,11.4,Monthly,Credit Card,0,2.8,1
+CUST00994,37,9.33,49,438.0,2,14.7,Quarterly,E-Wallet,0,3.2,0
+CUST00995,30,8.07,45,473.0,2,10.7,Monthly,E-Wallet,0,3.8,0
+CUST00996,50,11.09,82,280.0,1,6.3,Annual,Credit Card,1,3.4,1
+CUST00997,43,11.04,66,123.0,2,12.1,Monthly,Credit Card,1,3.6,0
+CUST00998,52,2.9,77,469.0,4,8.2,Monthly,Bank Transfer,0,5.0,0
+CUST00999,37,12.67,45,549.0,0,19.7,Annual,Credit Card,0,4.4,0
+CUST01000,37,3.18,79,576.0,1,10.7,Quarterly,E-Wallet,0,2.5,0
+CUST01001,34,11.8,20,557.0,3,8.7,Quarterly,Credit Card,0,3.7,0
+CUST01002,29,12.11,64,516.0,0,21.9,Monthly,Bank Transfer,0,3.1,0
+CUST01003,22,5.01,93,284.0,0,15.7,Monthly,Bank Transfer,0,3.9,0
+CUST01004,45,7.19,93,588.0,1,7.5,Quarterly,E-Wallet,0,3.5,0
+CUST01005,29,4.96,67,264.0,4,8.0,Quarterly,Bank Transfer,0,5.0,0
+CUST01006,42,7.81,83,649.0,4,14.4,Annual,Credit Card,0,4.0,0
+CUST01007,24,7.51,3,435.0,0,12.2,Quarterly,Credit Card,0,3.5,1
+CUST01008,46,10.99,54,441.0,6,16.5,Monthly,Bank Transfer,0,5.0,0
+CUST01009,49,12.69,78,606.0,2,8.7,Annual,Bank Transfer,1,3.8,0
+CUST01010,54,12.97,64,630.0,3,15.5,Monthly,E-Wallet,0,2.2,0
+CUST01011,43,6.7,40,589.0,3,1.0,Monthly,Bank Transfer,1,3.5,1
+CUST01012,31,7.83,59,302.0,3,11.2,Monthly,Bank Transfer,1,4.2,0
+CUST01013,26,3.11,55,587.0,1,8.9,Monthly,Credit Card,1,4.0,1
+CUST01014,38,5.92,62,303.0,3,9.7,Annual,Credit Card,0,4.5,1
+CUST01015,41,11.59,4,592.0,1,11.5,Monthly,Credit Card,1,3.7,0
+CUST01016,54,13.67,60,193.0,3,17.7,Quarterly,Credit Card,0,3.7,0
+CUST01017,37,4.55,75,433.0,0,6.2,Monthly,Bank Transfer,0,2.3,0
+CUST01018,45,6.6,95,302.0,2,1.1,Monthly,Credit Card,0,5.0,0
+CUST01019,32,8.42,96,607.0,2,6.8,Monthly,Credit Card,0,3.3,0
+CUST01020,43,9.4,91,651.0,2,17.1,Quarterly,Credit Card,0,2.7,0
+CUST01021,42,5.91,30,486.0,2,3.8,Monthly,Credit Card,0,5.0,0
+CUST01022,41,9.86,2,480.0,2,9.1,Annual,Credit Card,0,5.0,0
+CUST01023,47,6.98,62,577.0,2,16.2,Monthly,Bank Transfer,1,3.2,1
+CUST01024,51,8.45,49,652.0,2,11.7,Monthly,Credit Card,0,1.9,0
+CUST01025,26,10.25,9,457.0,1,17.6,Quarterly,Bank Transfer,0,3.0,0
+CUST01026,47,8.52,92,360.0,4,1.8,Annual,Bank Transfer,1,5.0,0
+CUST01027,54,7.1,31,567.0,2,10.4,Monthly,E-Wallet,0,3.8,0
+CUST01028,32,8.15,61,115.0,2,18.7,Quarterly,Credit Card,0,2.4,0
+CUST01029,27,8.22,79,614.0,0,6.4,Annual,Credit Card,1,4.3,0
+CUST01030,30,7.32,48,322.0,1,17.2,Annual,Credit Card,0,3.4,0
+CUST01031,37,7.67,25,407.0,2,10.8,Quarterly,Bank Transfer,0,3.0,0
+CUST01032,46,13.62,36,615.0,3,14.2,Quarterly,E-Wallet,1,3.1,0
+CUST01033,41,10.29,8,375.0,2,18.3,Monthly,Bank Transfer,1,4.8,0
+CUST01034,48,7.55,73,567.0,2,14.1,Annual,Bank Transfer,0,4.1,0
+CUST01035,22,10.73,58,655.0,1,9.0,Monthly,Credit Card,0,2.3,0
+CUST01036,21,7.43,45,470.0,1,14.8,Annual,Bank Transfer,1,3.9,0
+CUST01037,46,12.25,62,506.0,1,8.7,Monthly,Credit Card,0,3.7,0
+CUST01038,49,9.68,39,429.0,2,13.4,Monthly,Bank Transfer,0,3.2,0
+CUST01039,41,8.16,96,471.0,2,5.7,Quarterly,Bank Transfer,0,3.3,0
+CUST01040,31,9.93,58,249.0,2,12.1,Monthly,Credit Card,0,2.8,0
+CUST01041,31,3.47,81,397.0,0,17.9,Monthly,Credit Card,1,3.0,0
+CUST01042,55,4.89,83,218.0,2,10.5,Quarterly,E-Wallet,1,3.9,0
+CUST01043,54,4.68,64,288.0,1,17.5,Annual,Credit Card,1,3.4,0
+CUST01044,44,8.96,44,89.0,3,27.5,Quarterly,Credit Card,0,4.1,1
+CUST01045,42,14.04,29,498.0,2,11.9,Monthly,Credit Card,0,2.9,0
+CUST01046,25,15.64,59,754.0,1,15.1,Quarterly,Credit Card,1,4.2,0
+CUST01047,53,10.54,71,368.0,1,14.4,Monthly,Bank Transfer,0,4.8,0
+CUST01048,40,10.1,92,624.0,1,13.1,Monthly,Bank Transfer,1,3.6,0
+CUST01049,39,2.74,9,653.0,1,15.9,Quarterly,E-Wallet,1,4.1,0
+CUST01050,55,6.76,92,234.0,2,10.8,Annual,Credit Card,0,4.1,1
+CUST01051,37,5.98,6,273.0,3,8.7,Monthly,Bank Transfer,0,3.1,0
+CUST01052,54,6.51,29,628.0,2,4.4,Quarterly,E-Wallet,0,4.1,0
+CUST01053,29,7.96,58,433.0,0,10.3,Monthly,Credit Card,1,1.6,0
+CUST01054,46,6.99,17,218.0,4,16.5,Monthly,Credit Card,0,1.2,1
+CUST01055,22,2.5,16,335.0,2,7.3,Monthly,E-Wallet,1,3.3,0
+CUST01056,29,10.89,87,526.0,3,13.2,Annual,Credit Card,0,4.2,0
+CUST01057,29,5.07,95,307.0,1,11.4,Annual,Credit Card,0,3.5,0
+CUST01058,37,9.27,3,50.0,1,8.9,Quarterly,Credit Card,0,4.3,0
+CUST01059,21,15.14,21,392.0,4,2.7,Quarterly,Credit Card,1,2.5,0
+CUST01060,45,5.56,64,407.0,3,18.8,Annual,Credit Card,1,4.4,0
+CUST01061,45,2.5,90,452.0,1,14.6,Monthly,Credit Card,0,5.0,0
+CUST01062,55,7.58,36,677.0,2,25.3,Monthly,Bank Transfer,0,3.0,0
+CUST01063,23,12.02,86,460.0,1,17.4,Monthly,Credit Card,1,4.3,1
+CUST01064,50,14.77,62,494.0,1,18.7,Quarterly,E-Wallet,0,3.6,0
+CUST01065,54,4.57,42,640.0,1,3.3,Annual,Credit Card,0,4.0,0
+CUST01066,32,10.09,76,452.0,0,3.2,Monthly,E-Wallet,0,5.0,0
+CUST01067,39,7.01,42,835.0,3,12.2,Monthly,E-Wallet,0,3.9,0
+CUST01068,37,8.16,61,223.0,1,6.3,Monthly,E-Wallet,1,4.3,0
+CUST01069,30,16.96,13,282.0,3,8.6,Annual,E-Wallet,1,2.5,0
+CUST01070,32,3.69,11,561.0,2,24.6,Monthly,Bank Transfer,0,4.3,0
+CUST01071,36,9.31,54,676.0,0,17.9,Monthly,E-Wallet,0,,1
+CUST01072,44,10.0,16,414.0,5,7.3,Quarterly,Credit Card,0,2.8,0
+CUST01073,39,11.97,8,268.0,1,1.0,Quarterly,Credit Card,0,3.3,1
+CUST01074,28,8.81,59,767.0,6,6.9,Monthly,E-Wallet,0,4.2,0
+CUST01075,51,9.49,57,307.0,2,9.2,Monthly,Credit Card,0,4.0,0
+CUST01076,41,7.25,40,511.0,2,10.4,Quarterly,E-Wallet,1,2.4,1
+CUST01077,37,9.36,59,687.0,0,5.6,Monthly,E-Wallet,1,3.7,0
+CUST01078,43,7.4,2,371.0,3,17.6,Annual,Credit Card,0,3.3,0
+CUST01079,36,10.49,94,338.0,0,8.4,Quarterly,E-Wallet,1,2.7,0
+CUST01080,26,7.32,94,350.0,1,15.2,Monthly,Credit Card,1,4.8,0
+CUST01081,28,9.71,76,612.0,0,12.3,Monthly,Credit Card,0,3.6,0
+CUST01082,45,8.41,10,641.0,2,16.7,Monthly,Bank Transfer,0,4.5,0
+CUST01083,38,12.1,44,456.0,0,10.8,Monthly,Credit Card,0,2.5,0
+CUST01084,45,8.34,11,789.0,2,7.4,Annual,Bank Transfer,0,4.1,0
+CUST01085,32,2.83,79,456.0,2,9.0,Annual,Bank Transfer,0,4.6,0
+CUST01086,35,12.54,80,683.0,1,9.1,Monthly,Credit Card,1,3.4,0
+CUST01087,46,5.6,81,372.0,2,22.3,Monthly,E-Wallet,0,3.2,0
+CUST01088,46,6.41,90,870.0,0,12.4,Monthly,Bank Transfer,1,2.4,0
+CUST01089,52,6.59,2,733.0,5,12.0,Monthly,Credit Card,0,2.8,0
+CUST01090,30,12.9,50,427.0,1,16.4,Quarterly,Credit Card,0,3.2,0
+CUST01091,36,2.5,12,708.0,2,12.0,Monthly,E-Wallet,0,2.7,0
+CUST01092,27,18.54,90,699.0,2,17.6,Annual,E-Wallet,1,2.9,1
+CUST01093,37,11.88,23,730.0,1,10.1,Monthly,Credit Card,1,3.7,0
+CUST01094,43,9.21,18,50.0,1,9.6,Quarterly,Credit Card,1,3.9,0
+CUST01095,46,8.32,62,579.0,1,7.1,Annual,E-Wallet,1,4.6,0
+CUST01096,41,9.41,96,548.0,3,21.3,Monthly,Bank Transfer,0,2.9,1
+CUST01097,42,10.17,62,535.0,1,11.7,Monthly,Credit Card,0,3.6,1
+CUST01098,27,10.56,38,489.0,2,6.1,Monthly,Bank Transfer,0,3.2,0
+CUST01099,34,10.28,67,495.0,1,13.0,Monthly,Credit Card,0,3.2,0
+CUST01100,35,8.79,38,681.0,2,8.7,Annual,E-Wallet,1,3.3,0
+CUST01101,27,7.87,67,547.0,1,10.1,Annual,Credit Card,1,3.4,0
+CUST01102,29,8.02,94,489.0,0,13.6,Annual,Credit Card,1,3.8,0
+CUST01103,28,7.88,61,655.0,2,19.6,Annual,Credit Card,0,3.3,1
+CUST01104,43,12.13,1,525.0,3,12.5,Monthly,E-Wallet,0,4.7,1
+CUST01105,49,10.4,94,542.0,3,8.4,Annual,E-Wallet,0,2.1,1
+CUST01106,38,2.5,45,786.0,1,9.5,Annual,Bank Transfer,0,4.5,0
+CUST01107,51,10.6,96,372.0,3,15.3,Monthly,Bank Transfer,1,3.3,0
+CUST01108,50,9.12,28,177.0,2,2.2,Monthly,Credit Card,0,3.4,0
+CUST01109,55,8.44,21,463.0,2,6.8,Quarterly,E-Wallet,1,3.6,0
+CUST01110,38,7.26,13,489.0,0,13.1,Monthly,Credit Card,1,,0
+CUST01111,37,12.1,27,580.0,4,3.5,Monthly,E-Wallet,0,2.8,0
+CUST01112,34,11.53,7,469.0,1,10.4,Annual,Credit Card,0,3.0,0
+CUST01113,51,6.03,22,586.0,2,9.6,Annual,Credit Card,1,4.1,0
+CUST01114,44,9.8,74,901.0,2,16.4,Monthly,Bank Transfer,0,2.1,0
+CUST01115,55,5.39,53,,0,10.7,Monthly,E-Wallet,1,3.6,0
+CUST01116,54,4.09,79,626.0,0,17.9,Annual,E-Wallet,0,2.9,0
+CUST01117,23,6.49,79,427.0,2,12.4,Quarterly,Bank Transfer,0,2.7,0
+CUST01118,46,11.26,4,201.0,1,20.9,Monthly,Credit Card,0,2.1,0
+CUST01119,43,11.55,96,50.0,1,5.1,Quarterly,E-Wallet,0,4.3,0
+CUST01120,35,10.14,23,357.0,1,20.1,Annual,Credit Card,1,3.7,0
+CUST01121,24,10.82,70,50.0,5,9.9,Annual,E-Wallet,0,3.0,0
+CUST01122,49,10.15,88,542.0,4,19.4,Monthly,Bank Transfer,1,3.5,0
+CUST01123,42,6.45,84,381.0,2,17.9,Monthly,Credit Card,0,2.6,0
+CUST01124,45,9.88,84,214.0,1,1.0,Annual,Credit Card,1,3.1,0
+CUST01125,33,11.06,76,474.0,1,14.4,Monthly,Credit Card,0,3.4,0
+CUST01126,38,10.91,33,317.0,0,17.0,Quarterly,Credit Card,0,3.7,0
+CUST01127,53,12.3,28,531.0,2,18.6,Monthly,Credit Card,0,4.0,0
+CUST01128,36,10.77,8,577.0,1,6.1,Monthly,Credit Card,0,2.0,0
+CUST01129,22,9.62,1,324.0,2,15.0,Monthly,Credit Card,1,4.0,0
+CUST01130,55,11.92,37,407.0,4,13.0,Monthly,Bank Transfer,0,2.0,1
+CUST01131,54,8.42,63,489.0,1,14.2,Annual,E-Wallet,1,4.0,0
+CUST01132,50,5.68,22,197.0,1,17.0,Monthly,Credit Card,0,3.4,0
+CUST01133,33,7.98,70,489.0,1,17.8,Annual,Credit Card,1,4.6,1
+CUST01134,33,6.12,21,192.0,1,8.7,Annual,Credit Card,0,3.0,1
+CUST01135,38,6.34,96,552.0,3,13.3,Monthly,Bank Transfer,1,4.3,0
+CUST01136,52,8.04,35,372.0,4,12.2,Quarterly,E-Wallet,1,2.5,1
+CUST01137,52,5.96,79,191.0,1,10.8,Monthly,Bank Transfer,0,3.7,0
+CUST01138,55,7.51,5,346.0,2,11.3,Annual,E-Wallet,0,1.8,1
+CUST01139,49,2.5,60,353.0,3,13.0,Quarterly,Bank Transfer,0,4.4,0
+CUST01140,49,9.18,46,642.0,1,9.0,Monthly,Bank Transfer,0,5.0,0
+CUST01141,36,8.5,50,481.0,2,16.4,Monthly,Credit Card,0,3.0,0
+CUST01142,30,5.89,48,278.0,2,18.3,Quarterly,E-Wallet,0,3.7,0
+CUST01143,50,10.61,6,747.0,1,7.9,Annual,E-Wallet,1,4.0,0
+CUST01144,45,11.5,89,563.0,2,18.6,Monthly,Bank Transfer,1,2.2,0
+CUST01145,40,3.36,56,389.0,2,7.9,Quarterly,E-Wallet,1,2.9,0
+CUST01146,25,6.06,59,170.0,1,16.5,Monthly,Credit Card,0,2.9,1
+CUST01147,21,6.04,29,374.0,2,18.6,Annual,E-Wallet,1,5.0,0
+CUST01148,50,5.49,71,410.0,3,11.5,Monthly,Credit Card,0,4.5,0
+CUST01149,23,11.15,77,516.0,3,7.9,Quarterly,Credit Card,0,3.4,0
+CUST01150,34,7.88,18,559.0,2,9.1,Monthly,Credit Card,0,4.3,0
+CUST01151,50,7.65,2,595.0,0,13.8,Quarterly,E-Wallet,1,3.8,0
+CUST01152,24,2.5,8,160.0,1,21.8,Annual,E-Wallet,1,4.1,0
+CUST01153,38,10.53,75,488.0,3,3.5,Annual,E-Wallet,0,2.7,1
+CUST01154,45,4.53,54,421.0,1,12.5,Annual,E-Wallet,1,4.8,0
+CUST01155,21,8.69,38,932.0,3,11.6,Monthly,Bank Transfer,0,2.9,0
+CUST01156,35,9.39,48,462.0,0,9.7,Annual,E-Wallet,1,3.0,0
+CUST01157,29,12.85,27,338.0,2,11.6,Quarterly,E-Wallet,0,4.1,0
+CUST01158,35,4.31,20,470.0,1,9.3,Annual,Bank Transfer,0,3.9,0
+CUST01159,44,2.5,12,448.0,2,18.2,Quarterly,Credit Card,0,3.6,1
+CUST01160,24,9.09,43,92.0,1,18.7,Monthly,Bank Transfer,1,4.4,1
+CUST01161,32,14.26,61,523.0,0,12.4,Monthly,E-Wallet,0,2.6,0
+CUST01162,26,12.46,31,394.0,0,11.3,Quarterly,E-Wallet,0,5.0,0
+CUST01163,44,9.17,91,445.0,1,9.5,Monthly,E-Wallet,1,3.1,1
+CUST01164,31,6.93,96,293.0,1,12.5,Annual,E-Wallet,1,3.5,0
+CUST01165,33,11.08,61,253.0,4,21.2,Quarterly,E-Wallet,1,5.0,0
+CUST01166,54,5.38,74,608.0,0,11.5,Annual,E-Wallet,0,3.0,1
+CUST01167,45,10.02,67,650.0,1,7.8,Monthly,Bank Transfer,1,4.5,0
+CUST01168,27,10.12,91,525.0,2,10.0,Monthly,Credit Card,0,3.4,0
+CUST01169,24,11.89,35,124.0,8,15.8,Annual,Bank Transfer,1,2.8,0
+CUST01170,28,17.33,95,537.0,0,8.4,Monthly,Bank Transfer,1,3.3,0
+CUST01171,40,9.76,15,127.0,5,11.8,Monthly,E-Wallet,0,4.1,0
+CUST01172,49,6.87,16,331.0,1,14.4,Annual,Bank Transfer,0,4.5,0
+CUST01173,30,8.42,13,606.0,1,8.8,Quarterly,Credit Card,1,3.8,0
+CUST01174,54,2.84,35,568.0,3,3.2,Monthly,Credit Card,0,2.2,1
+CUST01175,46,6.28,75,532.0,1,6.6,Annual,Bank Transfer,1,4.2,0
+CUST01176,23,7.19,59,686.0,1,7.7,Monthly,Bank Transfer,0,3.5,0
+CUST01177,26,6.82,21,551.0,1,10.9,Annual,Credit Card,0,2.6,0
+CUST01178,25,8.99,54,87.0,1,12.2,Monthly,Credit Card,0,3.9,0
+CUST01179,25,5.87,75,383.0,0,16.1,Quarterly,Bank Transfer,1,4.6,0
+CUST01180,43,12.09,30,443.0,0,5.9,Monthly,Credit Card,0,3.6,0
+CUST01181,29,,48,421.0,2,15.4,Quarterly,Credit Card,1,4.4,0
+CUST01182,55,8.47,35,339.0,2,10.1,Monthly,Credit Card,0,4.0,0
+CUST01183,40,7.45,86,265.0,1,3.1,Annual,Bank Transfer,1,4.0,0
+CUST01184,55,9.0,38,882.0,4,12.1,Monthly,Bank Transfer,0,3.3,0
+CUST01185,38,11.14,31,380.0,2,18.6,Monthly,Credit Card,0,4.3,0
+CUST01186,37,5.73,78,873.0,1,16.4,Quarterly,E-Wallet,1,4.4,0
+CUST01187,44,6.39,24,245.0,1,11.6,Monthly,Credit Card,0,4.3,0
+CUST01188,23,7.53,49,568.0,3,17.6,Monthly,Credit Card,0,3.3,0
+CUST01189,52,4.19,96,491.0,2,13.0,Monthly,Credit Card,1,4.5,0
+CUST01190,55,5.88,32,284.0,2,16.9,Monthly,Credit Card,0,3.9,1
+CUST01191,33,6.98,55,366.0,2,3.7,Monthly,Credit Card,0,2.7,1
+CUST01192,45,11.3,79,447.0,2,5.8,Monthly,Credit Card,0,3.3,0
+CUST01193,29,9.34,58,298.0,0,15.6,Monthly,Bank Transfer,0,3.1,0
+CUST01194,24,9.12,3,404.0,0,19.7,Quarterly,Bank Transfer,0,1.8,0
+CUST01195,34,11.22,80,50.0,1,14.1,Quarterly,Bank Transfer,0,4.5,0
+CUST01196,54,8.06,69,578.0,1,9.5,Monthly,E-Wallet,1,,0
+CUST01197,31,9.75,85,671.0,3,7.7,Annual,Credit Card,0,4.7,0
+CUST01198,23,8.17,10,532.0,4,10.4,Annual,E-Wallet,1,3.7,0
+CUST01199,48,9.35,83,858.0,1,18.1,Monthly,Credit Card,0,3.1,0
+CUST01200,49,6.64,25,573.0,5,10.3,Monthly,Bank Transfer,0,2.8,0

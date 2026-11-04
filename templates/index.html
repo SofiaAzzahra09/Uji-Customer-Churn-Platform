@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard & EDA Overview{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="fw-bold mb-1"><i class="fa-solid fa-chart-pie text-primary me-2"></i>Executive Churn Dashboard</h2>
+        <p class="text-muted mb-0">Eksplorasi Data & Pola Retensi Pelanggan</p>
+    </div>
+    <div>
+        <a href="/predict" class="btn btn-primary shadow-sm"><i class="fa-solid fa-wand-magic-sparkles me-2"></i>Prediksi Pelanggan Baru</a>
+    </div>
+</div>
+
+<!-- KPI Cards -->
+<div class="row g-3 mb-4">
+    <div class="col-md-3">
+        <div class="card card-custom kpi-card p-3 h-100" style="border-left-color: #3b82f6;">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="text-muted small fw-semibold text-uppercase">Total Pelanggan</span>
+                    <h3 class="fw-bold my-1">{{ stats.total_customers }}</h3>
+                    <span class="badge bg-light text-secondary border">Ukuran Dataset</span>
+                </div>
+                <div class="bg-primary-subtle text-primary p-3 rounded-circle">
+                    <i class="fa-solid fa-users fa-xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card card-custom kpi-card p-3 h-100" style="border-left-color: #ef4444;">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="text-muted small fw-semibold text-uppercase">Overall Churn Rate</span>
+                    <h3 class="fw-bold my-1 text-danger">{{ stats.churn_rate }}%</h3>
+                    <span class="badge bg-danger-subtle text-danger border border-danger-subtle">Imbalanced Data (1:5)</span>
+                </div>
+                <div class="bg-danger-subtle text-danger p-3 rounded-circle">
+                    <i class="fa-solid fa-user-xmark fa-xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card card-custom kpi-card p-3 h-100" style="border-left-color: #10b981;">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="text-muted small fw-semibold text-uppercase">Rata-rata Kepuasan</span>
+                    <h3 class="fw-bold my-1 text-success">{{ stats.avg_satisfaction }} <small class="fs-6 text-muted">/ 5.0</small></h3>
+                    <span class="badge bg-success-subtle text-success border border-success-subtle">Skor Kepuasan</span>
+                </div>
+                <div class="bg-success-subtle text-success p-3 rounded-circle">
+                    <i class="fa-solid fa-star fa-xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card card-custom kpi-card p-3 h-100" style="border-left-color: #8b5cf6;">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="text-muted small fw-semibold text-uppercase">Rata-rata Pengeluaran</span>
+                    <h3 class="fw-bold my-1">Rp {{ stats.avg_monthly_spend }}k</h3>
+                    <span class="badge bg-light text-secondary border">Per Bulan</span>
+                </div>
+                <div class="bg-purple-subtle text-primary p-3 rounded-circle" style="background-color: #ede9fe; color: #7c3aed;">
+                    <i class="fa-solid fa-wallet fa-xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Charts Row 1 -->
+<div class="row g-4 mb-4">
+    <div class="col-lg-4">
+        <div class="card card-custom p-4 h-100">
+            <h5 class="fw-bold mb-3 d-flex align-items-center"><i class="fa-solid fa-chart-pie text-primary me-2"></i>Distribusi Churn Pelanggan</h5>
+            <div class="chart-container" style="position: relative; height:260px;">
+                <canvas id="churnDonutChart"></canvas>
+            </div>
+            <p class="text-muted small text-center mt-3 mb-0">Mayoritas pelanggan aktif (82.4%), sedangkan 17.6% memutuskan berhenti berlangganan.</p>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card card-custom p-4 h-100">
+            <h5 class="fw-bold mb-3 d-flex align-items-center"><i class="fa-solid fa-file-contract text-primary me-2"></i>Churn Rate Berdasarkan Kontrak</h5>
+            <div class="chart-container" style="position: relative; height:260px;">
+                <canvas id="contractBarChart"></canvas>
+            </div>
+            <p class="text-muted small text-center mt-3 mb-0">Kontrak Bulanan (Monthly) memiliki churn rate tertinggi (19.2%).</p>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card card-custom p-4 h-100">
+            <h5 class="fw-bold mb-3 d-flex align-items-center"><i class="fa-solid fa-credit-card text-primary me-2"></i>Churn Rate Berdasarkan Pembayaran</h5>
+            <div class="chart-container" style="position: relative; height:260px;">
+                <canvas id="paymentBarChart"></canvas>
+            </div>
+            <p class="text-muted small text-center mt-3 mb-0">Pengguna E-Wallet memiliki tingkat churn tertinggi (19.9%).</p>
+        </div>
+    </div>
+</div>
+
+<!-- Key Business Insights Banner -->
+<div class="card card-custom p-4 mb-4" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); color: #ffffff;">
+    <div class="row align-items-center">
+        <div class="col-md-9">
+            <h4 class="fw-bold text-white mb-2"><i class="fa-solid fa-lightbulb text-warning me-2"></i>Insight Strategis untuk Tim Retensi Bisnis</h4>
+            <ul class="mb-0 small text-light ps-3">
+                <li class="mb-1"><strong>Kepuasan Pelanggan (Satisfaction Score):</strong> Merupakan faktor korelasi terkuat (-0.11). Pelanggan dengan skor &le; 3.0 wajib mendapatkan intervensi langsung dari tim customer care.</li>
+                <li class="mb-1"><strong>Sensitivitas Tipe Kontrak:</strong> Pelanggan Monthly lebih rentan pindah ke kompetitor. Memberikan insentif peralihan ke kontrak Annual akan meningkatkan retensi secara signifikan.</li>
+                <li><strong>Efektivitas Diskon:</strong> Pelanggan yang memanfaatkan diskon menunjukkan churn rate lebih rendah (15.9% vs 18.4%), membuktikan promosi loyalitas efektif.</li>
+            </ul>
+        </div>
+        <div class="col-md-3 text-center mt-3 mt-md-0">
+            <a href="/predict" class="btn btn-warning fw-bold px-4 py-2 shadow"><i class="fa-solid fa-arrow-right me-1"></i> Uji Prediksi</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // 1. Churn Donut Chart
+    const ctxDonut = document.getElementById('churnDonutChart').getContext('2d');
+    new Chart(ctxDonut, {
+        type: 'doughnut',
+        data: {
+            labels: ['Aktif (Stayed)', 'Berhenti (Churned)'],
+            datasets: [{
+                data: [{{ churn_counts.get(0, 989) }}, {{ churn_counts.get(1, 211) }}],
+                backgroundColor: ['#10b981', '#ef4444'],
+                borderWidth: 2,
+                borderColor: '#ffffff'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'bottom' }
+            }
+        }
+    });
+
+    // 2. Contract Bar Chart
+    const ctxContract = document.getElementById('contractBarChart').getContext('2d');
+    new Chart(ctxContract, {
+        type: 'bar',
+        data: {
+            labels: {{ contract_labels | tojson }},
+            datasets: [{
+                label: 'Churn Rate (%)',
+                data: {{ contract_churn_rates | tojson }},
+                backgroundColor: '#3b82f6',
+                borderRadius: 6
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: { beginAtZero: true, max: 25, title: { display: true, text: 'Persentase (%)' } }
+            },
+            plugins: {
+                legend: { display: false }
+            }
+        }
+    });
+
+    // 3. Payment Bar Chart
+    const ctxPayment = document.getElementById('paymentBarChart').getContext('2d');
+    new Chart(ctxPayment, {
+        type: 'bar',
+        data: {
+            labels: {{ payment_labels | tojson }},
+            datasets: [{
+                label: 'Churn Rate (%)',
+                data: {{ payment_churn_rates | tojson }},
+                backgroundColor: '#8b5cf6',
+                borderRadius: 6
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: { beginAtZero: true, max: 25, title: { display: true, text: 'Persentase (%)' } }
+            },
+            plugins: {
+                legend: { display: false }
+            }
+        }
+    });
+</script>
+{% endblock %}

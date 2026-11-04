@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+
+{% block title %}Prediksi Customer Churn{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-12">
+        <h2 class="fw-bold mb-1"><i class="fa-solid fa-wand-magic-sparkles text-primary me-2"></i>Prediksi Risiko Churn Pelanggan</h2>
+        <p class="text-muted">Simulasikan profil pelanggan untuk mendeteksi potensi churn menggunakan <strong>Model Random Forest Classifier</strong>.</p>
+    </div>
+</div>
+
+<div class="row g-4">
+    <!-- Form Input (Col 7) -->
+    <div class="col-lg-7">
+        <div class="card card-custom p-4">
+            <h5 class="fw-bold mb-3 border-bottom pb-2"><i class="fa-solid fa-sliders text-secondary me-2"></i>Input Parameter Pelanggan</h5>
+            
+            <form method="POST" action="/predict">
+                <div class="row g-3">
+                    <!-- Usia & Pendapatan -->
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">Usia Pelanggan (Tahun)</label>
+                        <input type="number" name="age" class="form-control" value="{{ inputs.age }}" min="18" max="90" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">Pendapatan Bulanan (Juta Rp)</label>
+                        <input type="number" step="0.1" name="income_million_idr" class="form-control" value="{{ inputs.income_million_idr }}" required>
+                    </div>
+
+                    <!-- Tenure & Spend -->
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">Lama Berlangganan / Tenure (Bulan)</label>
+                        <input type="number" name="tenure_months" class="form-control" value="{{ inputs.tenure_months }}" min="1" max="120" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">Rata-rata Pengeluaran Bulanan (Ribu Rp)</label>
+                        <input type="number" step="1" name="monthly_spend_idr" class="form-control" value="{{ inputs.monthly_spend_idr }}" required>
+                    </div>
+
+                    <!-- Support Tickets & Login Freq -->
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">Jumlah Tiket Keluhan (Support Tickets)</label>
+                        <input type="number" name="support_tickets" class="form-control" value="{{ inputs.support_tickets }}" min="0" max="20" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">Frekuensi Login per Bulan</label>
+                        <input type="number" step="0.1" name="login_frequency_monthly" class="form-control" value="{{ inputs.login_frequency_monthly }}" required>
+                    </div>
+
+                    <!-- Contract & Payment -->
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">Jenis Kontrak</label>
+                        <select name="contract_type" class="form-select" required>
+                            <option value="Monthly" {% if inputs.contract_type == 'Monthly' %}selected{% endif %}>Monthly (Bulanan - 1 Bulan)</option>
+                            <option value="Quarterly" {% if inputs.contract_type == 'Quarterly' %}selected{% endif %}>Quarterly (3 Bulanan)</option>
+                            <option value="Annual" {% if inputs.contract_type == 'Annual' %}selected{% endif %}>Annual (Tahunan - 12 Bulan)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">Metode Pembayaran</label>
+                        <select name="payment_method" class="form-select" required>
+                            <option value="Credit Card" {% if inputs.payment_method == 'Credit Card' %}selected{% endif %}>Credit Card</option>
+                            <option value="Bank Transfer" {% if inputs.payment_method == 'Bank Transfer' %}selected{% endif %}>Bank Transfer</option>
+                            <option value="E-Wallet" {% if inputs.payment_method == 'E-Wallet' %}selected{% endif %}>E-Wallet</option>
+                        </select>
+                    </div>
+
+                    <!-- Discount & Satisfaction Score -->
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">Penggunaan Diskon / Promo</label>
+                        <select name="discount_used" class="form-select" required>
+                            <option value="1" {% if inputs.discount_used|string == '1' %}selected{% endif %}>Ya (Menggunakan Diskon)</option>
+                            <option value="0" {% if inputs.discount_used|string == '0' %}selected{% endif %}>Tidak Pernah</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">Skor Kepuasan (1.0 - 5.0)</label>
+                        <input type="number" step="0.1" name="satisfaction_score" class="form-control" value="{{ inputs.satisfaction_score }}" min="1.0" max="5.0" required>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                        <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold shadow-sm">
+                            <i class="fa-solid fa-calculator me-2"></i>Jalankan Prediksi Churn
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Prediction Results (Col 5) -->
+    <div class="col-lg-5">
+        {% if result %}
+        <div class="card card-custom p-4 border-top border-4 border-{{ result.risk_color }} h-100">
+            <h5 class="fw-bold mb-3 d-flex align-items-center justify-content-between">
+                <span><i class="fa-solid fa-square-poll-vertical text-{{ result.risk_color }} me-2"></i>Hasil Prediksi</span>
+                <span class="badge bg-{{ result.risk_color }}-subtle text-{{ result.risk_color }} border border-{{ result.risk_color }}-subtle">{{ result.risk_level }} Risk</span>
+            </h5>
+
+            <!-- Probability Gauge -->
+            <div class="text-center my-3 p-3 bg-light rounded-3">
+                <span class="text-muted small fw-semibold text-uppercase">Probabilitas Churn</span>
+                <h1 class="display-5 fw-bold text-{{ result.risk_color }} my-1">{{ result.churn_probability }}%</h1>
+                <div class="progress mt-2" style="height: 10px;">
+                    <div class="progress-bar bg-{{ result.risk_color }}" role="progressbar" style="width: {{ result.churn_probability }}%;" aria-valuenow="{{ result.churn_probability }}" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="small text-muted mt-2 mb-0">Status: <strong>{{ result.status_text }}</strong></p>
+            </div>
+
+            <!-- Refined Feature Engineering Preview -->
+            <div class="mb-3">
+                <h6 class="fw-bold small text-muted text-uppercase mb-2"><i class="fa-solid fa-gears me-1"></i>Fitur Hasil Rekayasa (CRISP-DM Phase 3):</h6>
+                <div class="row g-2 small">
+                    <div class="col-6">
+                        <div class="p-2 border rounded bg-white">
+                            <span class="text-muted d-block">Support / Tenure:</span>
+                            <strong>{{ result.features.support_tickets_per_tenure }}</strong>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-2 border rounded bg-white">
+                            <span class="text-muted d-block">Spend / Login:</span>
+                            <strong>Rp {{ result.features.spend_per_login }}k</strong>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-2 border rounded bg-white">
+                            <span class="text-muted d-block">Spend-Income Ratio:</span>
+                            <strong>{{ result.features.spend_to_income_ratio }}</strong>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-2 border rounded bg-white">
+                            <span class="text-muted d-block">Support / Login:</span>
+                            <strong>{{ result.features.support_to_login_ratio }}</strong>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="p-2 border rounded bg-white">
+                            <span class="text-muted d-block">Kontrak:</span>
+                            <strong>{{ result.features.contract_duration_months }} Bln</strong>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="p-2 border rounded bg-white">
+                            <span class="text-muted d-block">Segmen:</span>
+                            <span class="badge bg-secondary">{{ result.features.tenure_segment }}</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="p-2 border rounded bg-white">
+                            <span class="text-muted d-block">High Support:</span>
+                            {% if result.features.high_support_flag %}
+                            <span class="badge bg-danger">Ya</span>
+                            {% else %}
+                            <span class="badge bg-success">Tidak</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% if result.threshold_used %}
+                <div class="small text-muted mt-2"><i class="fa-solid fa-sliders me-1"></i>Threshold: {{ result.threshold_used }} (Optimal F1-based)</div>
+                {% endif %}
+            </div>
+                </div>
+            </div>
+
+            <!-- Prescriptive Retention Recommendations -->
+            <div class="mt-2">
+                <h6 class="fw-bold small text-muted text-uppercase mb-2"><i class="fa-solid fa-list-check me-1"></i>Rekomendasi Aksi Retensi:</h6>
+                <ul class="list-group list-group-flush small">
+                    {% for rec in result.recommendations %}
+                    <li class="list-group-item px-0 py-1 border-0 d-flex align-items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-success mt-1"></i>
+                        <span>{{ rec }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% else %}
+        <div class="card card-custom p-4 text-center h-100 d-flex justify-content-center align-items-center bg-light">
+            <div class="p-4">
+                <div class="bg-primary-subtle text-primary p-4 rounded-circle d-inline-block mb-3">
+                    <i class="fa-solid fa-chart-line fa-2xl"></i>
+                </div>
+                <h5 class="fw-bold">Menunggu Input Profil</h5>
+                <p class="text-muted small">Isi formulir di sebelah kiri dan klik tombol <strong>Jalankan Prediksi Churn</strong> untuk melihat probabilitas churn, fitur rekayasa, dan rekomendasi aksi bisnis.</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
